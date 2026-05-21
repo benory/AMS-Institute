@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">
+     Invention No. 12 in A major, BWV 783
+    </title>
+            <respStmt>
+               <persName role="composer">
+      Bach, Johann Sebastian
+     </persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-05-08T17:00:43" />
+            <availability>
+     The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.
+    </availability>
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <pgHead func="first">
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large">     Invention No. 12 in A major, BWV 783</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer">Bach, Johann Sebastian</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <staffDef n="1" lines="5" meter.count="12" meter.unit="8">
+                           <label><lb />          Piano<lb />         </label>
+                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <instrDef midi.instrnum="0" />
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.count="12" meter.unit="8">
+                           <label><lb />          Piano<lb />         </label>
+                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <instrDef midi.instrnum="0" />
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <measure xml:id="mvyc2jx" n="1">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nwrjgzp" dur="4" pname="a" oct="4" stem.dir="up" />
+                           <note xml:id="net4ro3" type="mscore-beam-none" dur="8" pname="a" oct="4" stem.dir="up" />
+                           <note xml:id="neephh" dur="4" pname="a" oct="4" stem.dir="up" />
+                           <note xml:id="n4g8trt" type="mscore-beam-none" dur="8" pname="a" oct="4" stem.dir="up" />
+                           <note xml:id="nzul4lg" dots="1" dur="2" pname="b" oct="4" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s2" n="2">
+                        <layer xml:id="m1s2l1" n="1">
+                           <beam>
+                              <note xml:id="ngkani" type="mscore-beam-begin" dur="16" pname="a" oct="3" />
+                              <note xml:id="n3u227v" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="nz69ath" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1ridflb" accid="s" />
+                              </note>
+                              <note xml:id="n12467tu" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n1btk412" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="nfakymu" dur="16" pname="g" oct="3">
+                                 <accid xml:id="am5qvle" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n9yfutd" type="mscore-beam-begin" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a1bbijbf" accid="s" />
+                              </note>
+                              <note xml:id="naavuw3" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n5aoufq" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="nhcpe24" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1up8pgr" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nowm7tu" dur="16" pname="e" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nn0zwe0" type="mscore-beam-begin" dur="16" pname="d" oct="3" />
+                              <note xml:id="n1frx2ne" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1oc42mk" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="nyi5uwk" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nmc3ymg" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n7n3r9p" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n7y57k4" type="mscore-beam-begin" dur="16" pname="b" oct="2" />
+                              <note xml:id="n1ig0sbr" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n1kt7irp" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1j3puxx" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n2o4mg0" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="ndyuo53" dur="16" pname="d" oct="3" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tempo xml:id="t1omu7u0" type="mscore-infer-from-text" midi.bpm="120" staff="1" tstamp="1" place="above">         q<lb />         = 80<lb />
+                     </tempo>
+                     <mordent xml:id="m1xhnq02" form="upper" startid="#nwrjgzp" />
+                     <mordent xml:id="mn8z4uq" form="upper" startid="#neephh" />
+                     <trill xml:id="t3iqxmv" startid="#nzul4lg" />
+                     <tie xml:id="t12azk7d" startid="#nzul4lg" endid="#n1oybxgr" />
+                  </measure>
+                  <measure xml:id="m152mzd1" n="2">
+                     <staff xml:id="m2s1" n="1">
+                        <layer xml:id="m2s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1oybxgr" type="mscore-beam-begin" dur="16" pname="b" oct="4" />
+                              <note xml:id="n13o1ix6" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n6wvymk" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="a1q7axxr" accid="s" />
+                              </note>
+                              <note xml:id="n1p4wis5" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="np9yhd1" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="njummn" dur="16" pname="c" oct="5">
+                                 <accid xml:id="akcipm2" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nfet6oa" type="mscore-beam-begin" dur="16" pname="d" oct="5" />
+                              <note xml:id="n12qjusi" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1xxllx2" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1ffpb2z" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid xml:id="av5urt9" accid="s" />
+                              </note>
+                              <note xml:id="n1pis4cf" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nmzzrxq" dur="16" pname="d" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nxvk89h" type="mscore-beam-begin" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n94eidb" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n18cz497" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nqd431s" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nl4o88s" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="nnuw5ah" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1gn13b" type="mscore-beam-begin" dur="16" pname="d" oct="5">
+                                 <accid xml:id="aounfih" accid="s" />
+                              </note>
+                              <note xml:id="ndr8ysq" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n14hcaj4" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1ldyjmg" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nptutq4" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="n10zc0v0" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m2s2" n="2">
+                        <layer xml:id="m2s2l1" n="1">
+                           <beam>
+                              <note xml:id="n1xoz8ia" type="mscore-beam-begin" dur="8" pname="g" oct="2">
+                                 <accid xml:id="a1uj4gw3" accid="s" />
+                              </note>
+                              <note xml:id="n8ckyhb" type="mscore-beam-mid" dur="8" pname="b" oct="2" />
+                              <note xml:id="nuvg80q" dur="8" pname="g" oct="2">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1tswgih" type="mscore-beam-begin" dur="8" pname="e" oct="2" />
+                              <note xml:id="nn6m77b" type="mscore-beam-mid" dur="8" pname="f" oct="2">
+                                 <accid xml:id="a1lln5sk" accid="s" />
+                              </note>
+                              <note xml:id="n1xyqvdp" dur="8" pname="g" oct="2">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="nsc0pxm" dur="4" pname="a" oct="2" stem.dir="up" />
+                           <rest xml:id="r14rc9iu" type="mscore-beam-none" dur="8" />
+                           <rest xml:id="r15myus7" dots="1" dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mqh6a5o" n="3">
+                     <staff xml:id="m3s1" n="1">
+                        <layer xml:id="m3s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1bxnpiy" type="mscore-beam-begin" dur="16" pname="g" oct="5">
+                                 <accid xml:id="a6qbjvs" accid="s" />
+                              </note>
+                              <note xml:id="nxxnqt0" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="n1ov2l90" type="mscore-beam-mid" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1binv2s" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid xml:id="a100utl8" accid="s" />
+                              </note>
+                              <note xml:id="n1newe27" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1qxiwo7" dur="16" pname="d" oct="5">
+                                 <accid xml:id="ay5jstf" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nko3szd" type="mscore-beam-begin" dur="16" pname="c" oct="5">
+                                 <accid xml:id="arvewv8" accid="s" />
+                              </note>
+                              <note xml:id="n1sak6vc" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1g06zav" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1oeby6j" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1cvfj89" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n11epo6f" dur="16" pname="b" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n2k1go4" type="mscore-beam-begin" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1vfrb8k" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1r2lh5j" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nyg7ek1" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nsu5hu6" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1b5gtnj" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1j8n3dm" type="mscore-beam-begin" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a1whzndn" accid="s" />
+                              </note>
+                              <note xml:id="n37lggv" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1v2j5fw" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nk6v2p6" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="ndmwp4s" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n10b1v5t" dur="16" pname="a" oct="4" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m3s2" n="2">
+                        <layer xml:id="m3s2l1" n="1">
+                           <note xml:id="n15tfq7m" dur="4" pname="e" oct="3" stem.dir="down" />
+                           <note xml:id="nzvvp0e" type="mscore-beam-none" dur="8" pname="e" oct="3" stem.dir="down" />
+                           <note xml:id="n4180np" dur="4" pname="e" oct="3" stem.dir="down" />
+                           <note xml:id="ntc9yyz" type="mscore-beam-none" dur="8" pname="e" oct="3" stem.dir="down" />
+                           <note xml:id="nfhor9u" dots="1" dur="2" pname="f" oct="3" stem.dir="down">
+                              <accid xml:id="a1gmsc1w" accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <mordent xml:id="m17zsr2l" form="upper" startid="#n15tfq7m" />
+                     <mordent xml:id="m3uqg89" form="upper" startid="#n4180np" />
+                  </measure>
+                  <measure xml:id="mq0a346" n="4">
+                     <staff xml:id="m4s1" n="1">
+                        <layer xml:id="m4s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1ysa9fz" type="mscore-beam-begin" dur="8" pname="d" oct="4">
+                                 <accid xml:id="aw3jp16" accid="s" />
+                              </note>
+                              <note xml:id="nb1jgx7" type="mscore-beam-mid" dur="8" pname="f" oct="4">
+                                 <accid xml:id="a16tci5j" accid="s" />
+                              </note>
+                              <note xml:id="n7wwqya" dur="8" pname="d" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1l1w3kd" type="mscore-beam-begin" dur="16" pname="b" oct="3" />
+                              <note xml:id="nvsbehu" type="mscore-beam-mid" dur="16" pname="d" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1kbsn54" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nz5q0ti" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="ngrr0nb" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="azry38e" accid="s" />
+                              </note>
+                              <note xml:id="n1ouvuhw" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n16xldy" type="mscore-beam-begin" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1wwpyyu" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1c8n4c8" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nxtlvfq" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n2574be" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n1r74gwz" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1hwwoty" dur="4" pname="e" oct="4" stem.dir="up" />
+                           <rest xml:id="ro42pzl" type="mscore-beam-none" dur="8" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m4s2" n="2">
+                        <layer xml:id="m4s2l1" n="1">
+                           <beam>
+                              <note xml:id="nc1c4fo" type="mscore-beam-begin" dur="16" pname="f" oct="3">
+                                 <accid xml:id="aey2wmr" accid="s" />
+                              </note>
+                              <note xml:id="n1kwqiad" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n13urxx7" type="mscore-beam-mid" dur="16" pname="d" oct="3">
+                                 <accid xml:id="azq5gu5" accid="s" />
+                              </note>
+                              <note xml:id="n1kpcb39" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1urtmdz" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nos4grr" dur="16" pname="g" oct="3">
+                                 <accid xml:id="a19dyc7o" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1y3jlyt" type="mscore-beam-begin" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1c79rqf" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n3r24lw" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1722j94" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a17qx9p6" accid="s" />
+                              </note>
+                              <note xml:id="n1iykbqv" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n154nbus" dur="16" pname="a" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n16332xq" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1aen2hj" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="nm4evje" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="na5332a" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="nl3m0u1" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n15khtyb" dur="16" pname="b" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n5kjivt" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n5llmzi" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="nrwz54a" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1e77tql" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n16p98fi" type="mscore-beam-mid" dur="16" pname="d" oct="4">
+                                 <accid xml:id="a1owx6kt" accid="n" />
+                              </note>
+                              <note xml:id="n1bcczt" dur="16" pname="b" oct="3" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="ml2v8bf" n="5">
+                     <staff xml:id="m5s1" n="1">
+                        <layer xml:id="m5s1l1" n="1">
+                           <note xml:id="nf924bm" dur="4" pname="e" oct="5" stem.dir="down" />
+                           <note xml:id="nlcsqpx" type="mscore-beam-none" dur="8" pname="e" oct="5" stem.dir="down" />
+                           <note xml:id="n1k5b4a2" dur="4" pname="e" oct="5" stem.dir="down" />
+                           <note xml:id="n1dix38v" type="mscore-beam-none" dur="8" pname="e" oct="5" stem.dir="down" />
+                           <beam>
+                              <note xml:id="nwfl0vk" type="mscore-beam-begin" dur="16" pname="e" oct="5" />
+                              <note xml:id="npurkf6" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="n1kbco51" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1c1rn7c" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid xml:id="aph5hbx" accid="s" />
+                              </note>
+                              <note xml:id="n13419i0" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="ny3ygsz" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1pjdmjn" type="mscore-beam-begin" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1tuont0" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="n1gkratk" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nagq1m4" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n11jazp" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n14zpqy0" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m5s2" n="2">
+                        <layer xml:id="m5s2l1" n="1">
+                           <beam>
+                              <note xml:id="nw5okwg" type="mscore-beam-begin" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a31460p" accid="s" />
+                              </note>
+                              <note xml:id="nk99b0w" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="n1yrsjwb" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1x048d8" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="n1416irt" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1gz6bkm" dur="16" pname="b" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n11ll32h" type="mscore-beam-begin" dur="16" pname="a" oct="3" />
+                              <note xml:id="ng0cjl0" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="npglv43" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1bihvoh" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n144rw0q" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n5m8qg9" dur="16" pname="g" oct="3">
+                                 <accid xml:id="apkjxzl" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n12004yy" type="mscore-beam-begin" dur="8" pname="f" oct="3">
+                                 <accid xml:id="a1unt0jq" accid="s" />
+                              </note>
+                              <note xml:id="n93ox6a" type="mscore-beam-mid" dur="8" pname="f" oct="4">
+                                 <accid xml:id="ab105vp" accid="s" />
+                              </note>
+                              <note xml:id="n1ke777v" dur="8" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="npfgv62" type="mscore-beam-begin" dur="8" pname="a" oct="3" />
+                              <note xml:id="n1q9jar7" type="mscore-beam-mid" dur="8" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n10d49jn" dur="8" pname="a" oct="3" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <mordent xml:id="m1a5vdh" form="upper" startid="#nf924bm" />
+                     <mordent xml:id="m7g0kll" form="upper" startid="#n1k5b4a2" />
+                  </measure>
+                  <measure xml:id="m145ryw8" n="6">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="nuukrr4" dur="4" pname="d" oct="5" stem.dir="down" />
+                           <note xml:id="n1qoycay" type="mscore-beam-none" dur="8" pname="d" oct="5" stem.dir="down" />
+                           <note xml:id="nj1xvwg" dur="4" pname="d" oct="5" stem.dir="down" />
+                           <note xml:id="n1effr23" type="mscore-beam-none" dur="8" pname="d" oct="5" stem.dir="down" />
+                           <beam>
+                              <note xml:id="nu7crpw" type="mscore-beam-begin" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1f7k9sj" type="mscore-beam-mid" dur="16" pname="b" oct="5" />
+                              <note xml:id="nxdw9xi" type="mscore-beam-mid" dur="16" pname="g" oct="5">
+                                 <accid xml:id="alumtle" accid="s" />
+                              </note>
+                              <note xml:id="nazooa5" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1akk1vy" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="njq08ka" dur="16" pname="d" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nz1owm6" type="mscore-beam-begin" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="ngnizzr" type="mscore-beam-mid" dur="16" pname="b" oct="5" />
+                              <note xml:id="n7jktvo" type="mscore-beam-mid" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n18tq57m" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="ne7nife" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nke3rqa" dur="16" pname="d" oct="5" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m6s2" n="2">
+                        <layer xml:id="m6s2l1" n="1">
+                           <beam>
+                              <note xml:id="nnim2si" type="mscore-beam-begin" dur="16" pname="b" oct="3" />
+                              <note xml:id="nl9q8sl" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1ya252o" accid="s" />
+                              </note>
+                              <note xml:id="nojer8d" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="n1wk9e8f" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1r8ec3r" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="nt5r9cg" dur="16" pname="a" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n19teb5j" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid xml:id="a2hvdk7" accid="s" />
+                              </note>
+                              <note xml:id="n1r4dfny" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="njts2pm" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="novkvbc" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1gev9e8" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nrvjin2" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a183z0eg" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="ncn1msk" type="mscore-beam-begin" dur="8" pname="e" oct="3" />
+                              <note xml:id="nh0u5vb" type="mscore-beam-mid" dur="8" pname="b" oct="2" />
+                              <note xml:id="nb6ao0p" dur="8" pname="g" oct="2">
+                                 <accid xml:id="a1fd1q7p" accid="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="nbyirne" dur="4" pname="e" oct="2" stem.dir="up" />
+                           <rest xml:id="r1aqdz6h" type="mscore-beam-none" dur="8" />
+                        </layer>
+                     </staff>
+                     <mordent xml:id="m15pgl70" form="upper" startid="#nuukrr4" />
+                     <mordent xml:id="mne0en9" form="upper" startid="#nj1xvwg" />
+                  </measure>
+                  <measure xml:id="m1k0tzyd" n="7">
+                     <staff xml:id="m7s1" n="1">
+                        <layer xml:id="m7s1l1" n="1">
+                           <note xml:id="n5v84a7" type="mscore-beam-none" dur="8" pname="c" oct="5" stem.dir="down">
+                              <accid xml:id="a1dsy9zx" accid="s" />
+                           </note>
+                           <rest xml:id="r10lkbw2" dur="4" />
+                           <rest xml:id="r1u8l2d8" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n1tngm4d" type="mscore-beam-begin" dur="16" pname="d" oct="4" />
+                              <note xml:id="n1fkq2si" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a13endnd" accid="s" />
+                              </note>
+                              <note xml:id="ne9eg2l" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n13pjn3u" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1usxhhe" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1s7ylbv" type="mscore-beam-none" dur="8" pname="b" oct="4" stem.dir="down" />
+                           <rest xml:id="r19aubwl" dur="4" />
+                           <rest xml:id="r1rgru8q" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="np47t6w" type="mscore-beam-begin" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1mdhyfr" accid="s" />
+                              </note>
+                              <note xml:id="n1rl9cjp" type="mscore-beam-mid" dur="16" pname="e" oct="4">
+                                 <accid xml:id="a1yqev5t" accid="s" />
+                              </note>
+                              <note xml:id="n1bxqin4" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="a1pqrp9g" accid="s" />
+                              </note>
+                              <note xml:id="ne6iurs" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n10ec8j1" dur="16" pname="b" oct="4" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m7s2" n="2">
+                        <layer xml:id="m7s2l1" n="1">
+                           <rest xml:id="rk8ik1m" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="nnepqo0" type="mscore-beam-begin" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1th7tgd" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1j7x9hh" accid="s" />
+                              </note>
+                              <note xml:id="nti5vmt" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1rlq22v" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n100r2" dur="16" pname="g" oct="4">
+                                 <accid xml:id="acx79mq" accid="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1u2swfy" type="mscore-beam-none" dur="8" pname="f" oct="4" stem.dir="down">
+                              <accid xml:id="a6mo99q" accid="s" />
+                           </note>
+                           <rest xml:id="rb1npna" dur="4" />
+                           <rest xml:id="rhipwoa" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n15ebdit" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid xml:id="axi2gp3" accid="s" />
+                              </note>
+                              <note xml:id="n15kwmwm" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n62dsht" type="mscore-beam-mid" dur="16" pname="d" oct="4">
+                                 <accid xml:id="adq1fe2" accid="s" />
+                              </note>
+                              <note xml:id="n138q5at" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nhqqjza" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1ciicc2" type="mscore-beam-none" dur="8" pname="e" oct="4" stem.dir="down">
+                              <accid xml:id="a1yui0jn" accid="s" />
+                           </note>
+                           <rest xml:id="r1mhcndj" dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1voeoj" n="8">
+                     <staff xml:id="m8s1" n="1">
+                        <layer xml:id="m8s1l1" n="1">
+                           <note xml:id="n1hc9gt8" type="mscore-beam-none" dur="8" pname="a" oct="4" stem.dir="up" />
+                           <rest xml:id="rdlsm76" dur="4" />
+                           <rest xml:id="rl80ev0" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="nybnk8b" type="mscore-beam-begin" dur="16" pname="b" oct="3" />
+                              <note xml:id="n96syj2" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="n19ucez4" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="aeuwv16" accid="s" />
+                              </note>
+                              <note xml:id="n7lx2no" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nq2vyap" dur="16" pname="a" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nbf22kn" type="mscore-beam-begin" dur="16" pname="g" oct="4">
+                                 <accid xml:id="ac52hjs" accid="s" />
+                              </note>
+                              <note xml:id="nq93xbw" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1d5x3z8" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n1okx581" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="ndcqvep" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1u876u3" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1lzfhhi" type="mscore-beam-begin" dur="16" pname="e" oct="4">
+                                 <accid xml:id="al3146x" accid="s" />
+                              </note>
+                              <note xml:id="n1sbt0gs" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nylnb34" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid xml:id="afk201f" accid="s" />
+                              </note>
+                              <note xml:id="n1v1legr" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n1l64846" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1in68um" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m8s2" n="2">
+                        <layer xml:id="m8s2l1" n="1">
+                           <rest xml:id="r1k2kff0" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n1nb7hjs" type="mscore-beam-begin" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a1nxhhqq" accid="s" />
+                              </note>
+                              <note xml:id="n823w5c" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1qpm4x7" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a19clee0" accid="s" />
+                              </note>
+                              <note xml:id="n5t895g" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a1hwaoye" accid="s" />
+                              </note>
+                              <note xml:id="n14sc81d" dur="16" pname="e" oct="4">
+                                 <accid xml:id="a19oshz0" accid="n" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1thpswg" type="mscore-beam-none" dur="8" pname="d" oct="4" stem.dir="down">
+                              <accid xml:id="a19lq0tl" accid="n" />
+                           </note>
+                           <rest xml:id="rch0ztc" dur="4" />
+                           <rest xml:id="r1j781l1" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n1vp2qq8" type="mscore-beam-begin" dur="16" pname="b" oct="2" />
+                              <note xml:id="n11bfhjm" type="mscore-beam-mid" dur="16" pname="d" oct="3">
+                                 <accid xml:id="a17a6lb9" accid="n" />
+                              </note>
+                              <note xml:id="nyluy47" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1mrwhr2" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="nb2hxe" dur="16" pname="a" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1yqi121" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid xml:id="a1ub1zb6" accid="s" />
+                              </note>
+                              <note xml:id="ndf167j" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid xml:id="ai626ed" accid="s" />
+                              </note>
+                              <note xml:id="n1nffkon" type="mscore-beam-mid" dur="16" pname="e" oct="3">
+                                 <accid xml:id="aihjk5d" accid="s" />
+                              </note>
+                              <note xml:id="nffu69u" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1h3j9wu" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1umqryb" dur="16" pname="b" oct="3" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m8qb70p" n="9">
+                     <staff xml:id="m9s1" n="1">
+                        <layer xml:id="m9s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1v1us89" type="mscore-beam-begin" dur="8" pname="f" oct="4">
+                                 <accid xml:id="a60w578" accid="s" />
+                              </note>
+                              <note xml:id="nm2uxfq" type="mscore-beam-mid" dur="8" pname="f" oct="5">
+                                 <accid xml:id="a1det71f" accid="s" />
+                              </note>
+                              <note xml:id="n1hq2rhf" dur="8" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="ni3vb6t" type="mscore-beam-begin" dur="8" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1u9dmf1" type="mscore-beam-mid" dur="8" pname="c" oct="4">
+                                 <accid xml:id="a1lbeez3" accid="s" />
+                              </note>
+                              <note xml:id="n16fe603" dur="8" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1dp3mm9" dots="1" dur="2" pname="g" oct="4" stem.dir="up">
+                              <accid xml:id="a1ue9p6p" accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m9s2" n="2">
+                        <layer xml:id="m9s2l1" n="1">
+                           <beam>
+                              <note xml:id="nkrfr8m" type="mscore-beam-begin" dur="16" pname="a" oct="3" />
+                              <note xml:id="npcj9n2" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="npk5kls" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1hljqn8" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid xml:id="azoowm5" accid="s" />
+                              </note>
+                              <note xml:id="n1s9vvjt" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a142qbvj" accid="s" />
+                              </note>
+                              <note xml:id="n15i7rc0" dur="16" pname="e" oct="3">
+                                 <accid xml:id="a1tzn0uk" accid="n" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n8o6zzb" type="mscore-beam-begin" dur="16" pname="d" oct="3" />
+                              <note xml:id="n4svoij" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="ngzs0iq" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1gckio4" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1sg8rv" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n1w5ce3z" dur="16" pname="c" oct="3">
+                                 <accid xml:id="a1l0izaw" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1ob3i3a" type="mscore-beam-begin" dur="16" pname="b" oct="2" />
+                              <note xml:id="n2f5diy" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n20iwny" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1a64s2d" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n13kdl3o" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="njxl9xu" dur="16" pname="d" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nqso8dh" type="mscore-beam-begin" dur="16" pname="g" oct="2">
+                                 <accid xml:id="a1ygazsr" accid="s" />
+                              </note>
+                              <note xml:id="n6olxad" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="nerrpmw" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="nfkz3e2" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="n1nc0b34" type="mscore-beam-mid" dur="16" pname="g" oct="2">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1hn355j" dur="16" pname="b" oct="2" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tie xml:id="ttwc9en" startid="#n1dp3mm9" endid="#n1i1yp3a" />
+                  </measure>
+                  <measure xml:id="mzwoviz" n="10">
+                     <staff xml:id="m10s1" n="1">
+                        <layer xml:id="m10s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1i1yp3a" type="mscore-beam-begin" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n6m93k4" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a1bsatwo" accid="s" />
+                              </note>
+                              <note xml:id="n1vt097e" type="mscore-beam-mid" dur="16" pname="e" oct="4">
+                                 <accid xml:id="a1ox70t8" accid="s" />
+                              </note>
+                              <note xml:id="nhmn6hy" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nkgvlo6" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="awlz5k3" accid="s" />
+                              </note>
+                              <note xml:id="niorjk9" dur="16" pname="a" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1t7j79d" type="mscore-beam-begin" dur="16" pname="b" oct="4" />
+                              <note xml:id="nttpbxr" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1smks1m" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nxn77lj" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n16mcgrp" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid xml:id="a1db3ok9" accid="s" />
+                              </note>
+                              <note xml:id="nbktsyl" dur="16" pname="b" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1hmnluw" type="mscore-beam-begin" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1jx1ugw" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nteznq3" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n3o7rxg" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nt2xvkh" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid xml:id="auq1s7f" accid="s" />
+                              </note>
+                              <note xml:id="n1ijyuyf" dur="16" pname="d" oct="5">
+                                 <accid xml:id="ags2q03" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1iaupdl" type="mscore-beam-begin" dur="16" pname="b" oct="4">
+                                 <accid xml:id="a1070lzx" accid="s" />
+                              </note>
+                              <note xml:id="n1gc0vrh" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n4vpudk" type="mscore-beam-mid" dur="16" pname="b" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1rohyrd" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1aeq756" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="ngeycqz" dur="16" pname="d" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m10s2" n="2">
+                        <layer xml:id="m10s2l1" n="1">
+                           <beam>
+                              <note xml:id="n6bu2mi" type="mscore-beam-begin" dur="8" pname="e" oct="2">
+                                 <accid xml:id="a1tgi37c" accid="s" />
+                              </note>
+                              <note xml:id="n1256tqb" type="mscore-beam-mid" dur="8" pname="g" oct="2">
+                                 <accid xml:id="a14y09cs" accid="s" />
+                              </note>
+                              <note xml:id="n1inhlbi" dur="8" pname="e" oct="2">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nx37htt" type="mscore-beam-begin" dur="8" pname="c" oct="2">
+                                 <accid xml:id="a5cabub" accid="s" />
+                              </note>
+                              <note xml:id="nfkpew" type="mscore-beam-mid" dur="8" pname="d" oct="2">
+                                 <accid xml:id="alkwuen" accid="s" />
+                              </note>
+                              <note xml:id="nevw3bd" dur="8" pname="e" oct="2">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n8kmgs4" type="mscore-beam-begin" dur="8" pname="f" oct="2">
+                                 <accid xml:id="a1moq43w" accid="s" />
+                              </note>
+                              <note xml:id="n4ydtf" type="mscore-beam-mid" dur="8" pname="f" oct="3">
+                                 <accid xml:id="a1y8m8rk" accid="s" />
+                              </note>
+                              <note xml:id="n1k6qtwy" dur="8" pname="d" oct="3">
+                                 <accid xml:id="a82sido" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1yb2zj8" type="mscore-beam-begin" dur="8" pname="g" oct="3">
+                                 <accid xml:id="a4rcdwg" accid="s" />
+                              </note>
+                              <note xml:id="n9h7umo" type="mscore-beam-mid" dur="8" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1ygnx7m" dur="8" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1ekbwlk" n="11">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <beam>
+                              <note xml:id="n70gs4r" type="mscore-beam-begin" dur="16" pname="e" oct="5">
+                                 <accid xml:id="aau9v19" accid="n" />
+                              </note>
+                              <note xml:id="n19wsn0v" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid xml:id="a1oh4aui" accid="s" />
+                              </note>
+                              <note xml:id="n1s12uos" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1f65fdo" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid xml:id="avixnal" accid="s" />
+                              </note>
+                              <note xml:id="n10wr8h2" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid xml:id="a6c8ru7" accid="s" />
+                              </note>
+                              <note xml:id="n9sx5e2" dur="16" pname="b" oct="4">
+                                 <accid xml:id="a875cxp" accid="n" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="noi2q6o" type="mscore-beam-begin" dur="16" pname="a" oct="4" />
+                              <note xml:id="nygz2md" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nguluj5" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1valtlr" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n13ilzzk" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n11vd4vm" dur="16" pname="g" oct="4">
+                                 <accid xml:id="asv32i" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1wvlr4b" type="mscore-beam-begin" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a1w58gac" accid="s" />
+                              </note>
+                              <note xml:id="n1t2gs4o" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1ssxsr0" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1xm4i2l" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1acjykl" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1a6xzkj" dur="16" pname="a" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1txu9bq" type="mscore-beam-begin" dur="16" pname="d" oct="4">
+                                 <accid xml:id="a9jylkg" accid="s" />
+                              </note>
+                              <note xml:id="nyfbjc6" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1ch3brr" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="nd7qjf9" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1f7iy3m" type="mscore-beam-mid" dur="16" pname="d" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nmiluk0" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m11s2" n="2">
+                        <layer xml:id="m11s2l1" n="1">
+                           <note xml:id="n1rs6d75" dur="4" pname="c" oct="3" stem.dir="up">
+                              <accid xml:id="a19f660w" accid="s" />
+                           </note>
+                           <note xml:id="nnsbuom" type="mscore-beam-none" dur="8" pname="c" oct="3" stem.dir="up">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="n4yhx25" dur="4" pname="c" oct="3" stem.dir="up">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="n1j537cf" type="mscore-beam-none" dur="8" pname="c" oct="3" stem.dir="up">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="n1j2g6es" dots="1" dur="2" pname="d" oct="3" stem.dir="down">
+                              <accid xml:id="aj8txoy" accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <mordent xml:id="mobjia" form="upper" startid="#n1rs6d75" />
+                     <mordent xml:id="m18qam70" form="upper" startid="#n4yhx25" />
+                     <tie xml:id="t19dndni" startid="#n1j2g6es" endid="#n18pc3m5" />
+                  </measure>
+                  <measure xml:id="miu6gdt" n="12">
+                     <staff xml:id="m12s1" n="1">
+                        <layer xml:id="m12s1l1" n="1">
+                           <beam>
+                              <note xml:id="nbp4anu" type="mscore-beam-begin" dur="8" pname="b" oct="3">
+                                 <accid xml:id="ae9nc9l" accid="s" />
+                              </note>
+                              <note xml:id="nd2v2xw" type="mscore-beam-mid" dur="8" pname="d" oct="4">
+                                 <accid xml:id="ab0e26k" accid="s" />
+                              </note>
+                              <note xml:id="nl4whi2" dur="8" pname="f" oct="4">
+                                 <accid xml:id="arditwa" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nyd9okw" type="mscore-beam-begin" dur="8" pname="a" oct="4" />
+                              <note xml:id="n1hp02y6" type="mscore-beam-mid" dur="8" pname="g" oct="4">
+                                 <accid xml:id="aiy6nqy" accid="s" />
+                              </note>
+                              <note xml:id="nno3rx4" dur="8" pname="b" oct="4">
+                                 <accid xml:id="a1teei2i" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nzys3yj" type="mscore-beam-begin" dur="16" pname="c" oct="5">
+                                 <accid xml:id="ajq4ruc" accid="s" />
+                              </note>
+                              <note xml:id="n24t0z0" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="na331gd" type="mscore-beam-mid" dur="16" pname="g" oct="5">
+                                 <accid xml:id="a1ux6437" accid="s" />
+                              </note>
+                              <note xml:id="n1n90gjm" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1tismne" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1qyhq3q" dur="16" pname="e" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nqan0wb" type="mscore-beam-begin" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1xxier8" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1yy4lna" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n61o5u0" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nx7no1f" type="mscore-beam-mid" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1dpmfel" dur="16" pname="e" oct="5" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m12s2" n="2">
+                        <layer xml:id="m12s2l1" n="1">
+                           <beam>
+                              <note xml:id="n18pc3m5" type="mscore-beam-begin" dur="16" pname="d" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n6otqt0" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid xml:id="a2izw9v" accid="s" />
+                              </note>
+                              <note xml:id="n1gwtxt6" type="mscore-beam-mid" dur="16" pname="b" oct="2">
+                                 <accid xml:id="agqziqr" accid="s" />
+                              </note>
+                              <note xml:id="n1h5tjsv" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="ngho03q" type="mscore-beam-mid" dur="16" pname="d" oct="3">
+                                 <accid xml:id="a1q4in41" accid="s" />
+                              </note>
+                              <note xml:id="nyq8dbf" dur="16" pname="e" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1fofilv" type="mscore-beam-begin" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a1uzwpgi" accid="s" />
+                              </note>
+                              <note xml:id="ntn671x" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1mqipo7" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="njvg6x" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1xlrf6t" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid xml:id="awlkjdk" accid="s" />
+                              </note>
+                              <note xml:id="nuk0yw2" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n2xedo7" type="mscore-beam-begin" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1uxkc7b" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n141we70" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="nmmb5f" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1gb6bro" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1skb7dy" accid="s" />
+                              </note>
+                              <note xml:id="n1jck6br" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1q61ndx" type="mscore-beam-begin" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1bqpa2" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1aw3445" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n9jpkpd" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1fr1cru" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n197pxcv" dur="16" pname="b" oct="3">
+                                 <accid xml:id="a1endee7" accid="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m122br2s" n="13">
+                     <staff xml:id="m13s1" n="1">
+                        <layer xml:id="m13s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1ceoiyj" type="mscore-beam-begin" dur="16" pname="c" oct="5">
+                                 <accid xml:id="a6zc8kt" accid="s" />
+                              </note>
+                              <note xml:id="n1j6ecqu" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n10ildf3" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid xml:id="a1wykat7" accid="s" />
+                              </note>
+                              <note xml:id="naxpq34" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="ngflz87" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n14lje97" dur="16" pname="e" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1lyvl3l" type="mscore-beam-begin" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nobilm1" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nyblz0z" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1lyitr0" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nsrnhj9" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nwj28d4" dur="16" pname="a" oct="4">
+                                 <accid xml:id="acykrgn" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nip83f3" type="mscore-beam-begin" dur="16" pname="b" oct="4">
+                                 <accid xml:id="a1s1s4pk" accid="n" />
+                              </note>
+                              <note xml:id="n10dafpx" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid xml:id="ayjg2px" accid="n" />
+                              </note>
+                              <note xml:id="ndc1az0" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n18uq9ib" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1e5t3es" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nqhbk97" dur="16" pname="d" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n9ce9r" type="mscore-beam-begin" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1q6nifd" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="nowem6s" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nzm0uf2" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="nr01kqd" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1a2kdxl" dur="16" pname="d" oct="5" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m13s2" n="2">
+                        <layer xml:id="m13s2l1" n="1">
+                           <beam>
+                              <note xml:id="ny14k2" type="mscore-beam-begin" dur="16" pname="a" oct="3">
+                                 <accid xml:id="a1bxgymt" accid="s" />
+                              </note>
+                              <note xml:id="n1wz705y" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a1nx0l15" accid="s" />
+                              </note>
+                              <note xml:id="n1ag6q5k" type="mscore-beam-mid" dur="16" pname="a" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1sxkqgy" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1vhgh1k" accid="s" />
+                              </note>
+                              <note xml:id="np0fe0b" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="afdo2qs" accid="s" />
+                              </note>
+                              <note xml:id="nsoapg9" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1f87l9r" type="mscore-beam-begin" dur="16" pname="a" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nz7yixl" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nlhajo1" type="mscore-beam-mid" dur="16" pname="a" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1henbg7" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1t89lh8" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="npyurv7" dur="16" pname="e" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1kkbc3k" type="mscore-beam-begin" dur="16" pname="d" oct="4">
+                                 <accid xml:id="a1bygrwx" accid="n" />
+                              </note>
+                              <note xml:id="nxe7go6" type="mscore-beam-mid" dur="16" pname="b" oct="2">
+                                 <accid xml:id="a1dggcsl" accid="n" />
+                              </note>
+                              <note xml:id="nrglyoa" type="mscore-beam-mid" dur="16" pname="d" oct="3">
+                                 <accid xml:id="a4hjlhl" accid="n" />
+                              </note>
+                              <note xml:id="np70c1f" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n9xe6by" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n182t0jr" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1qp09iz" type="mscore-beam-begin" dur="16" pname="d" oct="3" />
+                              <note xml:id="nuxeqk" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="n1iby2sj" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="ndypy9d" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1klmoe4" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n1vw0jho" dur="16" pname="a" oct="3">
+                                 <accid xml:id="a15zl905" accid="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1bryub2" n="14">
+                     <staff xml:id="m14s1" n="1">
+                        <layer xml:id="m14s1l1" n="1">
+                           <beam>
+                              <note xml:id="nxvyfcu" type="mscore-beam-begin" dur="16" pname="b" oct="4" />
+                              <note xml:id="n1mi4dre" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n81hzi7" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nnjsyf0" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="nx5ctaz" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n1fxvtof" dur="16" pname="d" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n18vftj7" type="mscore-beam-begin" dur="16" pname="e" oct="5" />
+                              <note xml:id="nk31333" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="nluiwwo" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nkz7b89" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n188h0zs" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1204jvk" dur="16" pname="g" oct="4">
+                                 <accid xml:id="aqqxdz2" accid="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1qa1q9e" dur="4" pname="a" oct="4" stem.dir="up">
+                              <accid xml:id="a928pdt" accid="n" />
+                           </note>
+                           <note xml:id="nsvlmk3" type="mscore-beam-none" dur="8" pname="a" oct="4" stem.dir="up" />
+                           <note xml:id="n1mp52if" dur="4" pname="a" oct="4" stem.dir="up" />
+                           <note xml:id="n1d3xs8v" type="mscore-beam-none" dur="8" pname="a" oct="4" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m14s2" n="2">
+                        <layer xml:id="m14s2l1" n="1">
+                           <beam>
+                              <note xml:id="n1ak26el" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid xml:id="a12jtjda" accid="s" />
+                              </note>
+                              <note xml:id="n1f1skl9" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n11v97sw" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n3q3dsw" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n1qzk11p" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1j365yx" dur="16" pname="b" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1yojmb2" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1wy5kv5" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1ao0la9" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nzuajxu" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n1jbol6x" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="nyvqszx" dur="16" pname="d" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n122kp38" type="mscore-beam-begin" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1ae976b" accid="s" />
+                              </note>
+                              <note xml:id="n1oyh678" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="nkq1kz4" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1u4bwol" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="n1j263lr" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1j3l2kd" dur="16" pname="b" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1fol2kz" type="mscore-beam-begin" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1x95fd5" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n2gxise" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nph26zi" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n181fw94" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="nv3mlw5" dur="16" pname="g" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <mordent xml:id="m1id21gp" form="upper" startid="#n1qa1q9e" accidupper="n" />
+                     <mordent xml:id="m1c2lr5e" form="upper" startid="#n1mp52if" accidupper="n" />
+                  </measure>
+                  <measure xml:id="m1jssfaf" n="15">
+                     <staff xml:id="m15s1" n="1">
+                        <layer xml:id="m15s1l1" n="1">
+                           <beam>
+                              <note xml:id="njtmq1x" type="mscore-beam-begin" dur="16" pname="a" oct="4" />
+                              <note xml:id="nijybyl" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid xml:id="a1162mup" accid="s" />
+                              </note>
+                              <note xml:id="n1f1jyzo" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="npzuw4b" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1uge3jj" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a1dd5puk" accid="s" />
+                              </note>
+                              <note xml:id="n172y6xg" dur="16" pname="a" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ndwgwmx" type="mscore-beam-begin" dur="16" pname="b" oct="4" />
+                              <note xml:id="ng4z011" type="mscore-beam-mid" dur="16" pname="d" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1stuiua" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="n1izrrt4" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1i0bmyz" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n8365b0" dur="16" pname="a" oct="4" />
+                           </beam>
+                           <note xml:id="n154xciz" dur="4" pname="g" oct="4" stem.dir="up">
+                              <accid xml:id="aqd7x9" accid="n" />
+                           </note>
+                           <note xml:id="ncmvbj3" type="mscore-beam-none" dur="8" pname="g" oct="4" stem.dir="up" />
+                           <note xml:id="nn0fch7" dur="4" pname="g" oct="4" stem.dir="up" />
+                           <note xml:id="n10cd001" type="mscore-beam-none" dur="8" pname="g" oct="4" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m15s2" n="2">
+                        <layer xml:id="m15s2l1" n="1">
+                           <beam>
+                              <note xml:id="n1xgkrhn" type="mscore-beam-begin" dur="8" pname="f" oct="3">
+                                 <accid xml:id="a1yfnhl9" accid="s" />
+                              </note>
+                              <note xml:id="n1rh68h9" type="mscore-beam-mid" dur="8" pname="a" oct="3" />
+                              <note xml:id="n1s96yxc" dur="8" pname="d" oct="4">
+                                 <accid xml:id="agq149q" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1mqnl8x" type="mscore-beam-begin" dur="8" pname="d" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1r8aiu7" type="mscore-beam-mid" dur="8" pname="c" oct="4">
+                                 <accid xml:id="a1orhgnv" accid="s" />
+                              </note>
+                              <note xml:id="n1pzble7" dur="8" pname="b" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1yrfuc7" type="mscore-beam-begin" dur="16" pname="e" oct="4" />
+                              <note xml:id="nqj3tzi" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a1aqf2e9" accid="s" />
+                              </note>
+                              <note xml:id="nr24739" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="a1xmc0xe" accid="n" />
+                              </note>
+                              <note xml:id="nzj8p8" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1qom3du" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1696opg" dur="16" pname="d" oct="4">
+                                 <accid xml:id="a1aucpt1" accid="n" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nsj84y" type="mscore-beam-begin" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1v9ii1q" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="nz0skkd" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1e9ybtw" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="n1ccea3b" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nlbihhj" dur="16" pname="b" oct="3" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <mordent xml:id="ml74lhs" form="upper" startid="#n154xciz" accidupper="n" />
+                     <mordent xml:id="mcvm1fb" form="upper" startid="#nn0fch7" accidupper="n" />
+                  </measure>
+                  <measure xml:id="m1iai6je" n="16">
+                     <staff xml:id="m16s1" n="1">
+                        <layer xml:id="m16s1l1" n="1">
+                           <beam>
+                              <note xml:id="n19hvrz7" type="mscore-beam-begin" dur="16" pname="g" oct="4">
+                                 <accid xml:id="a1p5rfow" accid="n" />
+                              </note>
+                              <note xml:id="n11awdlq" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n13xu21t" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid xml:id="aul1a2m" accid="s" />
+                              </note>
+                              <note xml:id="n4ijyut" type="mscore-beam-mid" dur="16" pname="g" oct="4" />
+                              <note xml:id="n11dyrne" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="najm7ir" dur="16" pname="g" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1e0le0i" type="mscore-beam-begin" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1sj4r2a" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n9icb7f" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n7wsqof" type="mscore-beam-mid" dur="16" pname="g" oct="4" />
+                              <note xml:id="n1jfumsg" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n16riapj" dur="16" pname="g" oct="4" />
+                           </beam>
+                           <note xml:id="n1xdx6o3" type="mscore-beam-none" dur="8" pname="f" oct="4" stem.dir="up">
+                              <accid xml:id="a14kcxok" accid="s" />
+                           </note>
+                           <rest xml:id="r7mntdr" dur="4" />
+                           <rest xml:id="r1pvnoia" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n1csxc8d" type="mscore-beam-begin" dur="16" pname="g" oct="3">
+                                 <accid xml:id="aqekego" accid="s" />
+                              </note>
+                              <note xml:id="nhiu7jp" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n1a66moy" type="mscore-beam-mid" dur="16" pname="d" oct="4">
+                                 <accid xml:id="a1itva7v" accid="n" />
+                              </note>
+                              <note xml:id="ng4q0kb" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="aw8ntxh" accid="s" />
+                              </note>
+                              <note xml:id="nljsfmx" dur="16" pname="f" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m16s2" n="2">
+                        <layer xml:id="m16s2l1" n="1">
+                           <beam>
+                              <note xml:id="n6cfk8e" type="mscore-beam-begin" dur="8" pname="a" oct="3" />
+                              <note xml:id="n1amqofe" type="mscore-beam-mid" dur="8" pname="e" oct="3" />
+                              <note xml:id="nnz623z" dur="8" pname="c" oct="3">
+                                 <accid xml:id="a1u34sak" accid="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1ykonr4" dur="4" pname="a" oct="2" stem.dir="up" />
+                           <rest xml:id="r3sjgo6" type="mscore-beam-none" dur="8" />
+                           <rest xml:id="r1feeitl" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="nlbrkl8" type="mscore-beam-begin" dur="16" pname="d" oct="3">
+                                 <accid xml:id="a12b0l1y" accid="n" />
+                              </note>
+                              <note xml:id="n17zp7k" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a1lwsyn3" accid="s" />
+                              </note>
+                              <note xml:id="nxct80o" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1nhekl" type="mscore-beam-mid" dur="16" pname="d" oct="4" />
+                              <note xml:id="narhdno" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a11as3vn" accid="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n15l2qqt" type="mscore-beam-none" dur="8" pname="b" oct="3" stem.dir="down" />
+                           <rest xml:id="rtampgi" dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1cu14cw" n="17">
+                     <staff xml:id="m17s1" n="1">
+                        <layer xml:id="m17s1l1" n="1">
+                           <note xml:id="n1sxdis3" type="mscore-beam-none" dur="8" pname="e" oct="4" stem.dir="up" />
+                           <rest xml:id="r2mbdzp" dur="4" />
+                           <rest xml:id="r8sgcea" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n1ldpwst" type="mscore-beam-begin" dur="16" pname="f" oct="3">
+                                 <accid xml:id="acqqmcw" accid="s" />
+                              </note>
+                              <note xml:id="nexmlig" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="n1pcfax1" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a138hns" accid="s" />
+                              </note>
+                              <note xml:id="n1vtgomy" type="mscore-beam-mid" dur="16" pname="f" oct="4">
+                                 <accid xml:id="a140a935" accid="s" />
+                              </note>
+                              <note xml:id="n1qostlo" dur="16" pname="e" oct="4" />
+                           </beam>
+                           <note xml:id="n18kd7vu" type="mscore-beam-none" dur="8" pname="d" oct="4" stem.dir="up" />
+                           <rest xml:id="rn1ci84" dur="4" />
+                           <rest xml:id="rdabkgl" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n6g0dw" type="mscore-beam-begin" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1kx1ykd" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid xml:id="an7jbr0" accid="s" />
+                              </note>
+                              <note xml:id="n12wg9my" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="n6o8h9m" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="nhl73f" dur="16" pname="d" oct="4" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m17s2" n="2">
+                        <layer xml:id="m17s2l1" n="1">
+                           <rest xml:id="r10fmenh" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="n1bvzgya" type="mscore-beam-begin" dur="16" pname="c" oct="3">
+                                 <accid xml:id="askpzx6" accid="s" />
+                              </note>
+                              <note xml:id="n151gmr6" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="nx7bic6" type="mscore-beam-mid" dur="16" pname="g" oct="3">
+                                 <accid xml:id="a1chmve1" accid="s" />
+                              </note>
+                              <note xml:id="n1dy0mos" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid xml:id="a1ocscm4" accid="s" />
+                              </note>
+                              <note xml:id="n1io7yjm" dur="16" pname="b" oct="3" />
+                           </beam>
+                           <note xml:id="n11yplql" type="mscore-beam-none" dur="8" pname="a" oct="3" stem.dir="down" />
+                           <rest xml:id="r1lot698" dur="4" />
+                           <rest xml:id="r1fj4z5p" type="mscore-beam-none" dur="16" />
+                           <beam>
+                              <note xml:id="nofar9d" type="mscore-beam-begin" dur="16" pname="b" oct="2" />
+                              <note xml:id="n1o3qzam" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="noknql" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid xml:id="a10pa1ex" accid="s" />
+                              </note>
+                              <note xml:id="n69yn2v" type="mscore-beam-mid" dur="16" pname="b" oct="3" />
+                              <note xml:id="nobum88" dur="16" pname="a" oct="3" />
+                           </beam>
+                           <note xml:id="nalcdak" type="mscore-beam-none" dur="8" pname="g" oct="3" stem.dir="down">
+                              <accid accid.ges="s" />
+                           </note>
+                           <rest xml:id="r5md8uz" dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1glk2j8" n="18">
+                     <staff xml:id="m18s1" n="1">
+                        <layer xml:id="m18s1l1" n="1">
+                           <beam>
+                              <note xml:id="no7l0po" type="mscore-beam-begin" dur="16" pname="c" oct="4">
+                                 <accid xml:id="axw64mw" accid="s" />
+                              </note>
+                              <note xml:id="n1gim5fq" type="mscore-beam-mid" dur="16" pname="a" oct="3" />
+                              <note xml:id="ndcmlo2" type="mscore-beam-mid" dur="16" pname="c" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="npi9nh" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1gw5g2h" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n12o8b6b" dur="16" pname="e" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nqp3pkl" type="mscore-beam-begin" dur="16" pname="c" oct="5">
+                                 <accid xml:id="a1awjz69" accid="s" />
+                              </note>
+                              <note xml:id="n1dsg55c" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="n1qtnoxa" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1s2glva" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1hxk33" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="n1rjfk7f" dur="16" pname="f" oct="5">
+                                 <accid xml:id="a1vhjumt" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n107161f" type="mscore-beam-begin" dur="16" pname="d" oct="5" />
+                              <note xml:id="ns9j7nd" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nzxwrds" type="mscore-beam-mid" dur="16" pname="a" oct="5" />
+                              <note xml:id="n1dm1bso" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="ngcbnab" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n129bn3i" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nzcagxx" type="mscore-beam-begin" dur="16" pname="b" oct="4" />
+                              <note xml:id="nbkcm8" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1jg65vw" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="npmf4l0" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="n5rw0l7" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nimj2u3" dur="16" pname="d" oct="5" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m18s2" n="2">
+                        <layer xml:id="m18s2l1" n="1">
+                           <note xml:id="n1ap2wh4" dur="4" pname="a" oct="2" stem.dir="up" />
+                           <note xml:id="nd1yxxj" type="mscore-beam-none" dur="8" pname="a" oct="2" stem.dir="up" />
+                           <note xml:id="n1wd5jtt" dur="4" pname="a" oct="2" stem.dir="up" />
+                           <note xml:id="nz1m5xc" type="mscore-beam-none" dur="8" pname="a" oct="2" stem.dir="up" />
+                           <note xml:id="n1je4lgt" dots="1" dur="2" pname="b" oct="2" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <mordent xml:id="m5qmzt2" form="upper" startid="#n1ap2wh4" />
+                     <mordent xml:id="mc64z06" form="upper" startid="#n1wd5jtt" />
+                     <tie xml:id="tt0c6up" startid="#n1je4lgt" endid="#nhzb3zj" />
+                  </measure>
+                  <measure xml:id="m1arrawb" n="19">
+                     <staff xml:id="m19s1" n="1">
+                        <layer xml:id="m19s1l1" n="1">
+                           <beam>
+                              <note xml:id="nuq9nhg" type="mscore-beam-begin" dur="8" pname="g" oct="4">
+                                 <accid xml:id="a1w41gd3" accid="s" />
+                              </note>
+                              <note xml:id="nhb62b9" type="mscore-beam-mid" dur="8" pname="b" oct="4" />
+                              <note xml:id="n1svxzqj" dur="8" pname="d" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nfmv5gf" type="mscore-beam-begin" dur="8" pname="f" oct="5">
+                                 <accid xml:id="a1yuwq3z" accid="s" />
+                              </note>
+                              <note xml:id="nh3kaap" type="mscore-beam-mid" dur="8" pname="e" oct="5" />
+                              <note xml:id="n187j6u7" dur="8" pname="b" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n7ojvhu" type="mscore-beam-begin" dur="8" pname="f" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n17ra63v" type="mscore-beam-mid" dur="8" pname="e" oct="5" />
+                              <note xml:id="n2jsquw" dur="8" pname="a" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nambzhl" type="mscore-beam-begin" dur="8" pname="e" oct="5" />
+                              <note xml:id="nutqgoq" type="mscore-beam-mid" dur="8" pname="d" oct="5" />
+                              <note xml:id="nok79sg" dur="8" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m19s2" n="2">
+                        <layer xml:id="m19s2l1" n="1">
+                           <beam>
+                              <note xml:id="nhzb3zj" type="mscore-beam-begin" dur="16" pname="b" oct="2" />
+                              <note xml:id="n1yfip07" type="mscore-beam-mid" dur="16" pname="a" oct="2" />
+                              <note xml:id="ndihx8y" type="mscore-beam-mid" dur="16" pname="g" oct="2">
+                                 <accid xml:id="acqd05p" accid="s" />
+                              </note>
+                              <note xml:id="np3j39x" type="mscore-beam-mid" dur="16" pname="a" oct="2" />
+                              <note xml:id="n1puetmy" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="naofhic" dur="16" pname="c" oct="3">
+                                 <accid xml:id="a18st9au" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nj1d96i" type="mscore-beam-begin" dur="16" pname="d" oct="3" />
+                              <note xml:id="n17i75az" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nishgo6" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="ncegfjf" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid xml:id="afj9t97" accid="s" />
+                              </note>
+                              <note xml:id="nift06h" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1umyu67" dur="16" pname="d" oct="3" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nwhq9cd" type="mscore-beam-begin" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n16uvxjy" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="n10nbb3n" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n9azbu9" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="nebobz" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n1yx5bw5" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="nj86rs" type="mscore-beam-begin" dur="16" pname="b" oct="2" />
+                              <note xml:id="n6luhkd" type="mscore-beam-mid" dur="16" pname="a" oct="2" />
+                              <note xml:id="n1w4gqof" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="n10tyf8j" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="nfof3on" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nxyqabs" dur="16" pname="b" oct="2" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1m18f6z" n="20">
+                     <staff xml:id="m20s1" n="1">
+                        <layer xml:id="m20s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1og93mx" type="mscore-beam-begin" dur="8" pname="d" oct="5" />
+                              <note xml:id="nbi3zfq" type="mscore-beam-mid" dur="8" pname="c" oct="5">
+                                 <accid xml:id="a43uv9u" accid="s" />
+                              </note>
+                              <note xml:id="nwnx88o" dur="8" pname="e" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1fxso5q" type="mscore-beam-begin" dur="16" pname="f" oct="4">
+                                 <accid xml:id="aeb8iq1" accid="s" />
+                              </note>
+                              <note xml:id="nmloqzz" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid xml:id="aj06bz0" accid="s" />
+                              </note>
+                              <note xml:id="n12gkvst" type="mscore-beam-mid" dur="16" pname="a" oct="4" />
+                              <note xml:id="nf010j6" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nuldcly" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nh0xp0g" dur="16" pname="d" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nu4mmna" type="mscore-beam-begin" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="niz0qrx" type="mscore-beam-mid" dur="16" pname="e" oct="4" />
+                              <note xml:id="n1i8tx4z" type="mscore-beam-mid" dur="16" pname="g" oct="4">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1vyeg53" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nu17zcb" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1tfuu63" dur="16" pname="b" oct="4" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1veipkc" type="mscore-beam-begin" dur="16" pname="g" oct="5">
+                                 <accid xml:id="a1lsc5wn" accid="s" />
+                              </note>
+                              <note xml:id="nboarz" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="n9910ys" type="mscore-beam-mid" dur="16" pname="b" oct="5" />
+                              <note xml:id="nxg76zm" type="mscore-beam-mid" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1y01u2m" type="mscore-beam-mid" dur="16" pname="e" oct="5" />
+                              <note xml:id="nodx9yi" dur="16" pname="g" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m20s2" n="2">
+                        <layer xml:id="m20s2l1" n="1">
+                           <beam>
+                              <note xml:id="n1dbuuup" type="mscore-beam-begin" dur="16" pname="a" oct="2" />
+                              <note xml:id="n660uno" type="mscore-beam-mid" dur="16" pname="g" oct="2">
+                                 <accid xml:id="aoemhyf" accid="s" />
+                              </note>
+                              <note xml:id="n1hfb7lh" type="mscore-beam-mid" dur="16" pname="a" oct="2" />
+                              <note xml:id="n1nwclrm" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="n197b667" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid xml:id="a6zgqnv" accid="s" />
+                              </note>
+                              <note xml:id="nsvzzo" dur="16" pname="a" oct="2" />
+                           </beam>
+                           <note xml:id="n9k71qq" dur="4" pname="d" oct="3" stem.dir="down" />
+                           <note xml:id="nqiw8oz" type="mscore-beam-none" dur="8" pname="d" oct="3" stem.dir="down" />
+                           <note xml:id="n1wnuxwv" dots="1" dur="2" pname="d" oct="3" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <mordent xml:id="m1ppal8r" form="upper" startid="#n9k71qq" />
+                  </measure>
+                  <measure xml:id="m1bvsulm" right="end" n="21">
+                     <staff xml:id="m21s1" n="1">
+                        <layer xml:id="m21s1l1" n="1">
+                           <beam>
+                              <note xml:id="n7actwt" type="mscore-beam-begin" dur="8" pname="a" oct="5" />
+                              <note xml:id="n1mftsyw" type="mscore-beam-mid" dur="8" pname="e" oct="5" />
+                              <note xml:id="n1lrmwrv" dur="8" pname="c" oct="5">
+                                 <accid xml:id="aal393k" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1ywoa1r" type="mscore-beam-begin" dur="16" pname="a" oct="4" />
+                              <note xml:id="nwt8bc2" type="mscore-beam-mid" dur="16" pname="d" oct="5" />
+                              <note xml:id="nsy8txk" type="mscore-beam-mid" dur="16" pname="c" oct="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1o18tja" type="mscore-beam-mid" dur="16" pname="b" oct="4" />
+                              <note xml:id="nx7cz0c" dur="8" pname="e" oct="5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1u8uds" type="mscore-beam-begin" dur="16" pname="e" oct="5" />
+                              <note xml:id="n1ukzxhy" type="mscore-beam-mid" dur="16" pname="f" oct="5">
+                                 <accid xml:id="ayg9fgf" accid="s" />
+                              </note>
+                              <note xml:id="n61cj74" type="mscore-beam-mid" dur="8" pname="c" oct="5" breaksec="1">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n453l2f" dur="16" pname="b" oct="4" />
+                              <note xml:id="ntri2yd" dur="16" pname="a" oct="4" />
+                           </beam>
+                           <note xml:id="n1pmk0zo" dots="1" dur="4" pname="a" oct="4" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m21s2" n="2">
+                        <layer xml:id="m21s2l1" n="1">
+                           <beam>
+                              <note xml:id="n1qcim0k" type="mscore-beam-begin" dur="16" pname="c" oct="3">
+                                 <accid xml:id="a19chfza" accid="s" />
+                              </note>
+                              <note xml:id="n13025dj" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n1b2zwbg" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n410bce" type="mscore-beam-mid" dur="16" pname="b" oct="2" />
+                              <note xml:id="n4lihi4" type="mscore-beam-mid" dur="16" pname="a" oct="2" />
+                              <note xml:id="n1cf179x" dur="16" pname="g" oct="2">
+                                 <accid xml:id="a2clqd2" accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1tdx6y9" type="mscore-beam-begin" dur="16" pname="f" oct="2">
+                                 <accid xml:id="arf99kd" accid="s" />
+                              </note>
+                              <note xml:id="nmp3vqh" type="mscore-beam-mid" dur="16" pname="f" oct="3">
+                                 <accid xml:id="aex7erw" accid="s" />
+                              </note>
+                              <note xml:id="n1vlsjsg" type="mscore-beam-mid" dur="16" pname="e" oct="3" />
+                              <note xml:id="n1ffq79x" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n1mcjsgc" type="mscore-beam-mid" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="nhqbcmq" dur="16" pname="b" oct="2" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n6dv5t" type="mscore-beam-begin" dur="16" pname="c" oct="3">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1poxihe" type="mscore-beam-mid" dur="16" pname="d" oct="3" />
+                              <note xml:id="n4gtgjo" type="mscore-beam-mid" dur="8" pname="e" oct="3" />
+                              <note xml:id="n1csmtau" dur="8" pname="e" oct="2" />
+                           </beam>
+                           <note xml:id="nw35h6h" dots="1" dur="4" pname="a" oct="2" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="tx3qrsg" startid="#nx7cz0c" endid="#n1u8uds" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
