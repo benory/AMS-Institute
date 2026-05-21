@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Dous viaire gracieus</title>
+                <composer>Guillaume de Machaut</composer>
+                <funder>
+                    <corpName>Brandeis University</corpName>
+                </funder>
+                <funder>
+                    <corpName>National Endowment for the Humanities (NEH)</corpName>
+                </funder>
+                <respStmt>
+                    <persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+                    <persName role="encoder">Karen Desmond</persName>
+                    <persName role="proofreader">Karen Desmond</persName>
+                </respStmt>
+            </titleStmt>
+            <pubStmt>
+                <publisher>
+                    <persName>Karen Desmond</persName>
+                    <corpName>Brandeis University</corpName>
+                </publisher>
+                <date>2021</date>
+                <availability>
+                    <useRestrict>Available for purposes of academic research and teaching only.</useRestrict>
+                </availability>
+            </pubStmt>
+            <seriesStmt>
+                <title>Measuring Polyphony: Digital Encodings of Late Medieval Music</title>
+                <editor>
+                    <persName>Karen Desmond</persName>
+                </editor>
+                <identifier>
+                    <ref targettype="home_page" target="http://www.measuringpolyphony.org/"/>
+                </identifier>
+            </seriesStmt>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application xml:id="MPEditor">
+                    <name>Measuring Polyphony Editor</name>
+                </application>
+            </appInfo>
+            <editorialDecl>
+                <p>This MEI encoding in mensural notation was made using the Measuring Polyphony Editor, transcribed from IIIF images of the original manuscript source one staff at a time, entering the pitches and rhythms for each stave using a combination of number and letter keystrokes. The Measuring Polyphony Editor generates two MEI files from this user input: an MEI parts file that captures each voice part entered, and an MEI score file that scores up the voice parts, which is viewable here.</p>
+            </editorialDecl>
+            <projectDesc>
+                <p>The Measuring Polyphony Editor, funded by a 2019-2020 NEH Digital Humanities Grant, is a prototype tool that allows a variety of modern readers (students and experts, musicologists, music theorists, those interested in the history of music notation, counterpoint, medieval palaeography and/or manuscript studies) to access and contribute transcriptions of music directly linked to digital images of the medieval manuscripts, and to learn about the original notation. This tool will offer new possibilities for the analysis and interpretation of late medieval music. In a broader humanities context, the project investigates how modeling the meanings of notational signs can lead to new understandings of the interaction between the sign and the signified, and of the relationship between notational style and changes in musical style across time and place.</p>
+            </projectDesc>
+        </encodingDesc>
+        <workList>
+            <work>
+                <identifier type="catalogue_number"/>
+                <title>Dous viaire gracieus</title>
+                <composer>Guillaume de Machaut</composer>
+                <incip>
+                    <incipText label="cantus" corresp="#cantus">
+                        <lg>
+                            <l>Dous viaire gracieus</l>
+                        </lg>
+                    </incipText>
+                    <incipText label="tenor" corresp="#tenor">
+                        <lg>
+                            <l>Tenor</l>
+                        </lg>
+                    </incipText>
+                </incip>
+                <classification>
+                    <termList>
+                        <term>Song</term>
+                    </termList>
+                </classification>
+            </work>
+        </workList>
+        <manifestationList>
+            <manifestation>
+                <titleStmt>
+                    <title>
+                        <identifier>MachA</identifier>
+                    </title>
+                </titleStmt>
+                <notesStmt>
+                    <annot>Primary manuscript source for this encoding.</annot>
+                    <annot label="original_clefs"/>
+                    <annot label="commentary">triplum breve 1, editorial dot added</annot>
+                </notesStmt>
+                <itemList>
+                    <item targettype="IIIF" target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84490444/manifest.json" codedval="CDLXXVIr"/>
+                    <item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/89/"></item>
+                </itemList>
+            </manifestation>
+            <manifestation>
+  						<titleStmt>
+  							<title>[Other concordant sources]</title>
+  						</titleStmt>
+  						<notesStmt>
+  							<annot>Vg, MachB, MachC, MachE, MachF-G, BnF fr. 843</annot>
+  						</notesStmt>
+  					</manifestation>
+        </manifestationList>
+    </meiHead>
+    <music>
+        <facsimile>
+            <surface xml:id="m-8c836af3-8cdd-4a16-abf7-b39fa25a4f1a">
+                <graphic xml:id="m-abb3fc34-a773-4515-9f62-cadbfe8a17bd" target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84490444/canvas/f973">
+                    <zone xml:id="mca869348-76cb-4f8d-bbe0-256fad16ade7" ulx="214" uly="218" lrx="3113" lry="710"/>
+                    <zone xml:id="m3cf192fa-dd0f-4e75-af23-889f5a39edce" ulx="226" uly="710" lrx="1219" lry="1127"/>
+                    <zone xml:id="mdd332ff5-fb61-4810-a1cf-2c72c9165864" ulx="1243" uly="718" lrx="3105" lry="1143"/>
+                </graphic>
+            </surface>
+        </facsimile>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef midi.bpm="450">
+                        <staffGrp symbol="bracket">
+                            <staffDef n="1" lines="5" notationtype="mensural.black" notationsubtype="Ars_nova" xml:id="cantus" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below">
+                                <mensur modusminor="2" tempus="3" prolatio="2"/>
+                                <label>cantus</label>
+                            </staffDef>
+                            <staffDef n="2" lines="5" notationtype="mensural.black" notationsubtype="Ars_nova" xml:id="tenor" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below">
+                                <mensur modusminor="2" tempus="3" prolatio="2"/>
+                                <label>tenor</label>
+                            </staffDef>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <staff n="1">
+                            <layer n="1">
+                                <note xml:id="m-a498736f-6484-41fa-9e4e-089a76926b6a" dur="brevis" oct="3" pname="a">
+                                    <verse xml:id="m-76afa78e-cfce-4a1d-9897-8b86ad1cd8d7" color="black" n="1">
+                                        <syl xml:id="m-7ff630fd-40eb-4c1a-9123-393184b5bb3c">Dous</syl>
+                                    </verse>
+                                </note>
+                                <barLine form="dashed"/>
+                                <dot xml:id="m-20163db4-5f20-414b-925e-3a6de0bd79d3" form="div"/>
+                                <note xml:id="m-56b2e3ad-0290-4c29-a08f-3a1cd5fd8d6a" dur="semibrevis" oct="3" pname="b" accid="f">
+                                    <verse xml:id="m-0a87c637-d1d0-4798-8edd-d1842dc45340" color="black" n="1">
+                                        <syl xml:id="m-49a372ff-1539-4057-96de-b4ef2421f912">vi</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-58eac076-d0ee-49b3-b639-adb27f11f259" dur="minima" oct="3" pname="a"/>
+                                <note xml:id="m-17a746bf-8834-4450-b150-763171c1d589" dur="minima" oct="3" pname="g"/>
+                                <note xml:id="m-101c98f1-3e91-4359-a8d3-a3cce9b19f99" dur="semibrevis" oct="3" pname="f">
+                                  <accid accid="s" func="edit" />
+                                    <verse xml:id="m-31b44785-845b-4315-8f43-e13173c0a005" color="black" n="1">
+                                        <syl xml:id="m-b21087c8-f719-46e3-b78c-94ca327b259e">ai</syl>
+                                    </verse>
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-ce5f56f1-f2ec-47e5-9f51-db8f3c1b4851" dur="semibrevis" oct="3" pname="g">
+                                    <verse xml:id="m-ce02a452-0aba-402b-aeab-3e6f71d4f16c" color="black" n="1">
+                                        <syl xml:id="m-41add3ef-76a8-4b14-91b6-e41116df0994">re</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-3d5a888a-7b3d-46fc-95eb-4031c46575eb" dur="brevis" oct="3" pname="a" dur.quality="imperfecta" num="3" numbase="2">
+                                    <verse xml:id="m-c2d05308-480e-4496-ab7f-5211d38e6ca4" color="black" n="1">
+                                        <syl xml:id="m-acd98c86-c322-4d22-9f3f-3db4f813b493">gra</syl>
+                                    </verse>
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-d52a1ace-e1b0-4d23-ae5e-5f1cd11ad48f" dur="semibrevis" oct="3" pname="b">
+                                    <accid accid="f" func="edit" />
+                                    <verse xml:id="m-197e1f12-7320-4792-93ca-c9f92cd17c5b" color="black" n="1">
+                                        <syl xml:id="m-8cd03e4d-dd2b-43a2-9e91-15492cdbe9f9">ci</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-2f3ccd09-d6da-45bd-ba56-7c451ff0b1bb" dur="semibrevis" oct="3" pname="a" dur.quality="altera" num="1" numbase="2"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-274c61d8-4e30-4942-884c-0e14e55bd297" dur="brevis" oct="3" pname="g" dur.quality="imperfecta" num="3" numbase="2">
+                                    <verse xml:id="m-9ac72bdd-d39f-4001-890a-bf0357d84e70" color="black" n="1">
+                                        <syl xml:id="m-ffb22c38-f28c-405f-9ac6-8f4c5049b010">eus</syl>
+                                    </verse>
+                                </note>
+                                <rest xml:id="m-0cad0cd2-3234-4644-82ab-221aab99ade5" dur="semibrevis"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-cee117a5-4fad-4a3a-a988-e8ef773add89" dur="semibrevis" oct="4" pname="g">
+                                    <verse xml:id="m-cd4c5109-4aac-42a2-abc9-2a16ed77cd44" color="black" n="1">
+                                        <syl xml:id="m-d986abde-18ce-4b7e-9c1f-dbb976d7b980">de</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-6d5eb104-7fc9-43df-89c5-f78bf5d19169" dur="minima" oct="4" pname="f">
+                                    <accid xml:id="m-cecfdf13-6bfe-41aa-a907-0fc51c96a25d" accid="s"/>
+                                </note>
+                                <note xml:id="m-fd0cf1ff-3ef8-4bf5-aed9-4bfadcebeafe" dur="minima" oct="4" pname="e"/>
+                                <note xml:id="m-35f5e924-8541-46e3-87dc-54cefede5f31" dur="semibrevis" oct="4" pname="f">
+                                  <accid accid="s" func="edit" />
+                                </note>
+                                <barLine form="dashed"/>
+                                <rest xml:id="m-a02f5d1a-5778-4d08-9942-df8611d888cb" dur="semibrevis"/>
+                                <note xml:id="m-c4222418-9720-429d-946f-00fbc1de5701" dur="semibrevis" oct="3" pname="g">
+                                    <verse xml:id="m-de41af54-768f-4f6d-9325-cece42f685a7" color="black" n="1">
+                                        <syl xml:id="m-23990dff-87ad-4b9d-bbc5-c4eb8d26d674">fin</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-40f850b5-3c64-497b-a97b-d57649b553a4" dur="semibrevis" oct="3" pname="f">
+                                    <accid xml:id="m-937893c8-2f0f-4bdf-85e5-555e089138dd" accid="s"/>
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-aee6a143-3722-4b71-83a7-2007bf26e17c" dur="semibrevis" oct="3" pname="g">
+                                    <verse xml:id="m-b6b75613-8cd4-4e30-81c4-d78dcf988075" color="black" n="1">
+                                        <syl xml:id="m-68057ec0-d754-4a54-a9ac-c18965edb47f">cuer</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-c13ee7a6-30a2-4fcd-a301-8a42b762baca" dur="semibrevis" oct="3" pname="a">
+                                    <verse xml:id="m-a6d4be78-e3eb-40ea-bac6-15733cddedd0" color="black" n="1">
+                                        <syl xml:id="m-cb904c88-d9a8-49e1-9338-be9984db3840">vous</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-52c83829-3c10-4a16-9ce6-cc5a23b3e777" dur="minima" oct="3" pname="g"/>
+                                <note xml:id="m-e6f839c0-fbd0-4e80-9369-629fa497c04d" dur="minima" oct="3" pname="a"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-ee555a0d-f86d-4f6e-b408-2249c6239b3f" dur="semibrevis" oct="3" pname="b">
+                                    <accid xml:id="m-215563b2-68e5-4878-ae0b-76c48dfc56a0" accid="f"/>
+                                    <verse xml:id="m-248a133a-9399-4edf-9600-d768c335e954" color="black" n="1">
+                                        <syl xml:id="m-fa23cdb0-440f-4764-b43c-e435ae7ae676">ay</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-790df9f4-ddcd-4225-aedd-f1c8f1166238" dur="minima" oct="4" pname="d"/>
+                                <note xml:id="m-6f0477ea-1c8a-4e18-b159-ab58a1da4644" dur="minima" oct="4" pname="c"/>
+                                <note xml:id="m-9ab4f9fd-4e7d-43c7-bd65-492febe0460e" dur="minima" oct="3" pname="b">
+                                  <accid accid="f" func="edit" />
+                                </note>
+                                <note xml:id="m-db90c39e-e142-42eb-9518-eb62910bdb66" dur="minima" oct="4" pname="c"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-fc6eabd9-ec1f-4e1f-93a1-8e219da5fcae" dur="semibrevis" oct="4" pname="d"/>
+                                <rest xml:id="m-96db9970-e194-41fb-a40b-8bcf71e87e97" dur="semibrevis"/>
+                                <note xml:id="m-c37cd6dd-6abb-47bd-a0c7-24ea772d6d5a" dur="semibrevis" oct="4" pname="d">
+                                    <verse xml:id="m-4b003b87-1942-4454-a6f4-e00f7a59b53e" color="black" n="1">
+                                        <syl xml:id="m-242df306-b322-4cd2-9b9f-414291c9785b">ser</syl>
+                                    </verse>
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-6c05eb91-8062-4541-ba53-034513172c16" dur="semibrevis" oct="3" pname="g"/>
+                                <note xml:id="m-a5f22a4c-3525-4c30-93af-a3c31783e527" dur="minima" oct="3" pname="a"/>
+                                <note xml:id="m-c91c9666-b0ae-4c48-9179-7fc94a7daf51" dur="semibrevis" oct="3" pname="g"/>
+                                <note xml:id="m-38504d96-d814-43c8-bbb9-81df20457ea0" dur="minima" oct="3" pname="f"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-4ec6e074-364f-4d55-bd5e-98b311d1486e" dur="longa" oct="3" pname="b">
+                                  <accid accid="f" func="edit" />
+                                    <verse xml:id="m-04d64c2b-b806-4234-b6da-9bfb9a5f7729" color="black" n="1">
+                                        <syl xml:id="m-384222c0-713c-4587-9af0-455026e7cb68">vi.</syl>
+                                    </verse>
+                                </note>
+                                <barLine form="dashed"/>
+                                <rest xml:id="m-462c4737-c3a1-421f-94eb-76f8de40ce9a" dur="longa"/>
+                                <barLine form="dashed"/>
+                            </layer>
+                        </staff>
+                        <staff n="2">
+                            <layer n="1">
+                                <note xml:id="m-cf7feb9d-35b4-4807-8737-a7eb02f8f0e5" dur="brevis" oct="3" pname="f">
+                                    <accid xml:id="m-8b274244-c239-4c6b-aafe-bb2256362abd" accid="s"/>
+                                    <verse xml:id="m-b88e5dd1-4aa4-4060-b5ef-d62db9bf9087" color="black" n="1">
+                                        <syl xml:id="m-206f2b13-dda8-4f70-aa8e-14d64a042aea">Tenor</syl>
+                                    </verse>
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-88b68015-5e05-4f89-9fa5-fe65e1d8ec43" dur="brevis" oct="3" pname="g" dur.quality="imperfecta" num="3" numbase="2"/>
+                                <note xml:id="m-6723629b-afda-4d25-b46f-ae173f6f4a6c" dur="semibrevis" oct="3" pname="a"/>
+                                <barLine form="dashed"/>
+                                <dot xml:id="m-546ccc80-f62e-4c2f-8700-5bbe36e8c8cb" form="div"/>
+                                <note xml:id="m-a80984dd-d3b1-4e08-ae30-9c6b9a725197" dur="semibrevis" oct="3" pname="g"/>
+                                <note xml:id="m-5d735c4e-714c-4c08-ab49-ee64949509dc" dur="semibrevis" oct="3" pname="f" dur.quality="altera" num="1" numbase="2"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-a19bd8cc-afa9-45c4-890c-070bcddbd3a8" dur="brevis" oct="3" pname="g" dur.quality="imperfecta" num="3" numbase="2"/>
+                                <note xml:id="m-e039e2f8-afce-457b-8a79-27f9261096c9" dur="semibrevis" oct="3" pname="f">
+                                  <accid accid="s" func="edit" />
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-6760b7c9-a3e8-4217-b778-56178b54c744" dur="brevis" oct="3" pname="g"/>
+                                <barLine form="dashed"/>
+                                <rest xml:id="m-4c3c9b5e-6142-4b07-8f24-1ad68b2ac610" dur="brevis"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-05c26c8b-1075-4b34-8921-92e718884031" dur="semibrevis" oct="4" pname="g">
+                                    <verse xml:id="m-f5ba6189-4ef6-4b5e-b4aa-a8001d859b97" color="black" n="1">
+                                        <syl xml:id="m-ceea4665-f1bb-4b85-a8c8-1acc7c6bdf3c">or</syl>
+                                    </verse>
+                                </note>
+                                <note xml:id="m-50521ac8-62c5-442f-82dd-6f5377468d77" dur="minima" oct="4" pname="f">
+                                    <accid xml:id="m-a8715e44-c7bf-4827-a3f8-49a850a0aa02" accid="s"/>
+                                </note>
+                                <note xml:id="m-79eddc25-3878-4f81-bfb5-1f88b1ce2ae7" dur="minima" oct="4" pname="e"/>
+                                <note xml:id="m-73aa2a59-87a8-4589-84a7-2393f90feea1" dur="semibrevis" oct="4" pname="f">
+                                  <accid accid="s" func="edit" />
+                                </note>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-3f32b852-092b-46c6-b875-8e947fa2b3df" dur="semibrevis" oct="4" pname="d"/>
+                                <note xml:id="m-43d4cd84-9949-4c54-8f59-5ec23c1ba27e" dur="brevis" oct="4" pname="c" dur.quality="imperfecta" num="3" numbase="2"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-e77a4eda-5204-455c-a7f7-e164ebea45c1" dur="semibrevis" oct="3" pname="b">
+                                    <accid xml:id="m-26f45302-c6ca-45be-bab1-b76b0f9ac5bb" accid="f"/>
+                                </note>
+                                <note xml:id="m-bc8690f8-45ad-4454-9750-b41f5b9582e2" dur="brevis" oct="3" pname="a" dur.quality="imperfecta" num="3" numbase="2"/>
+                                <barLine form="dashed"/>
+                                <rest xml:id="m-ab6eb235-5baf-4026-9b74-9681081b73c7" dur="minima"/>
+                                <note xml:id="m-9411325e-0e94-4f63-8ca7-6590e02cc7bc" dur="minima" oct="3" pname="g"/>
+                                <note xml:id="m-82db2c0a-cd4a-45e1-9ccc-5ed7eb0c80c0" dur="semibrevis" oct="3" pname="g"/>
+                                <rest xml:id="m-82b3b8c3-3710-4a22-bc49-a89b400e6d74" dur="minima"/>
+                                <note xml:id="m-952b6b7a-0d10-4485-9c51-6549d60f5bde" dur="minima" oct="3" pname="a"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-f6290c74-9073-46f4-b496-1685a68298a8" dur="semibrevis" oct="3" pname="b">
+                                  <accid accid="f" func="edit" />
+                                </note>
+                                <note xml:id="m-34114f0f-41c4-46fe-9ac9-26f8ab67a2a0" dur="semibrevis" oct="4" pname="d"/>
+                                <note xml:id="m-3ed8a620-7cbd-4627-9f2b-1217d723dfa4" dur="semibrevis" oct="4" pname="c"/>
+                                <barLine form="dashed"/>
+                                <note xml:id="m-caa430eb-0a1f-4d2b-8b2c-8ee73d200871" dur="longa" oct="3" pname="b">
+                                  <accid accid="f" func="edit" />
+                                </note>
+                                <barLine form="dashed"/>
+                                <rest xml:id="m-de57a40b-6b77-4ea0-b05c-ab70188bf0b3" dur="longa"/>
+                                <barLine form="dashed"/>
+                            </layer>
+                        </staff>
+                        <bracketSpan xml:id="m-1590cafe-6f2e-4807-9bbd-fb79a98cbd6a" startid="#m-c4222418-9720-429d-946f-00fbc1de5701" endid="#m-40f850b5-3c64-497b-a97b-d57649b553a4" func="ligature" lform="solid"/>
+                        <bracketSpan xml:id="m-babc5dea-a5f6-45f1-9490-fc5af9dd34f4" startid="#m-cf7feb9d-35b4-4807-8737-a7eb02f8f0e5" endid="#m-88b68015-5e05-4f89-9fa5-fe65e1d8ec43" func="ligature" lform="solid"/>
+                        <bracketSpan xml:id="m-d88b2505-fbca-48c9-985b-ca56c25cc2d7" startid="#m-a80984dd-d3b1-4e08-ae30-9c6b9a725197" endid="#m-a19bd8cc-afa9-45c4-890c-070bcddbd3a8" func="ligature" lform="solid"/>
+                        <bracketSpan xml:id="m-e7246f64-93b6-4fb2-bba7-15553a3f3604" startid="#m-34114f0f-41c4-46fe-9ac9-26f8ab67a2a0" endid="#m-caa430eb-0a1f-4d2b-8b2c-8ee73d200871" func="ligature" lform="solid"/>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>
