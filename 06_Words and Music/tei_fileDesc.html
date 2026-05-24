@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "black"}, "group": 0, "id": 0, "label": "fileDesc", "level": 0, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 52}, {"font": {"color": "black"}, "group": 1, "id": 1, "label": "titleStmt", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 11}, {"font": {"color": "black"}, "group": 1, "id": 13, "label": "editionStmt", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 1, "id": 16, "label": "publicationStmt", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 14}, {"font": {"color": "black"}, "group": 1, "id": 31, "label": "notesStmt", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 1, "id": 37, "label": "sourceDesc", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 15}, {"font": {"color": "black"}, "group": 2, "id": 2, "label": "title", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 3, "label": "author", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 4, "label": "sponsor", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 5, "label": "sponsor", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 6, "label": "sponsor", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 7, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 10, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 3, "id": 8, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 9, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 11, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 12, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 14, "label": "edition", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 3, "id": 15, "label": "date", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 17, "label": "publisher", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 18, "label": "pubPlace", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 19, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 20, "label": "idno", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 21, "label": "availability", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 8}, {"font": {"color": "black"}, "group": 2, "id": 30, "label": "idno", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 22, "label": "p", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 7}, {"font": {"color": "black"}, "group": 4, "id": 23, "label": "address", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 6}, {"font": {"color": "black"}, "group": 5, "id": 24, "label": "addrLine", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 25, "label": "addrLine", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 26, "label": "addrLine", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 27, "label": "addrLine", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 28, "label": "addrLine", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 29, "label": "addrLine", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 32, "label": "note", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 33, "label": "note", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 34, "label": "note", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 35, "label": "note", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 36, "label": "note", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 38, "label": "listBibl", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 14}, {"font": {"color": "black"}, "group": 3, "id": 39, "label": "bibl", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 13}, {"font": {"color": "black"}, "group": 4, "id": 40, "label": "note", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 41, "label": "biblScope", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 42, "label": "title", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 43, "label": "title", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 44, "label": "author", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 45, "label": "respStmt", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 3}, {"font": {"color": "black"}, "group": 4, "id": 49, "label": "imprint", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 3}, {"font": {"color": "black"}, "group": 5, "id": 46, "label": "resp", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 47, "label": "name", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 48, "label": "certainty", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 50, "label": "date", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 51, "label": "publisher", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 6, "id": 52, "label": "orig", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 0, "id": "0_fileDesc|1_titleStmt", "to": 1, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_fileDesc|13_editionStmt", "to": 13, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_fileDesc|16_publicationStmt", "to": 16, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_fileDesc|31_notesStmt", "to": 31, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_fileDesc|37_sourceDesc", "to": 37, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|2_title", "to": 2, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|3_author", "to": 3, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|4_sponsor", "to": 4, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|5_sponsor", "to": 5, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|6_sponsor", "to": 6, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|7_respStmt", "to": 7, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_titleStmt|10_respStmt", "to": 10, "weight": 1}, {"arrows": "to", "from": 7, "id": "7_respStmt|8_resp", "to": 8, "weight": 1}, {"arrows": "to", "from": 7, "id": "7_respStmt|9_name", "to": 9, "weight": 1}, {"arrows": "to", "from": 10, "id": "10_respStmt|11_resp", "to": 11, "weight": 1}, {"arrows": "to", "from": 10, "id": "10_respStmt|12_name", "to": 12, "weight": 1}, {"arrows": "to", "from": 13, "id": "13_editionStmt|14_edition", "to": 14, "weight": 1}, {"arrows": "to", "from": 14, "id": "14_edition|15_date", "to": 15, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_publicationStmt|17_publisher", "to": 17, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_publicationStmt|18_pubPlace", "to": 18, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_publicationStmt|19_date", "to": 19, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_publicationStmt|20_idno", "to": 20, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_publicationStmt|21_availability", "to": 21, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_publicationStmt|30_idno", "to": 30, "weight": 1}, {"arrows": "to", "from": 21, "id": "21_availability|22_p", "to": 22, "weight": 1}, {"arrows": "to", "from": 22, "id": "22_p|23_address", "to": 23, "weight": 1}, {"arrows": "to", "from": 23, "id": "23_address|24_addrLine", "to": 24, "weight": 1}, {"arrows": "to", "from": 23, "id": "23_address|25_addrLine", "to": 25, "weight": 1}, {"arrows": "to", "from": 23, "id": "23_address|26_addrLine", "to": 26, "weight": 1}, {"arrows": "to", "from": 23, "id": "23_address|27_addrLine", "to": 27, "weight": 1}, {"arrows": "to", "from": 23, "id": "23_address|28_addrLine", "to": 28, "weight": 1}, {"arrows": "to", "from": 23, "id": "23_address|29_addrLine", "to": 29, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_notesStmt|32_note", "to": 32, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_notesStmt|33_note", "to": 33, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_notesStmt|34_note", "to": 34, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_notesStmt|35_note", "to": 35, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_notesStmt|36_note", "to": 36, "weight": 1}, {"arrows": "to", "from": 37, "id": "37_sourceDesc|38_listBibl", "to": 38, "weight": 1}, {"arrows": "to", "from": 38, "id": "38_listBibl|39_bibl", "to": 39, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|40_note", "to": 40, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|41_biblScope", "to": 41, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|42_title", "to": 42, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|43_title", "to": 43, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|44_author", "to": 44, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|45_respStmt", "to": 45, "weight": 1}, {"arrows": "to", "from": 39, "id": "39_bibl|49_imprint", "to": 49, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_respStmt|46_resp", "to": 46, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_respStmt|47_name", "to": 47, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_respStmt|48_certainty", "to": 48, "weight": 1}, {"arrows": "to", "from": 49, "id": "49_imprint|50_date", "to": 50, "weight": 1}, {"arrows": "to", "from": 49, "id": "49_imprint|51_publisher", "to": 51, "weight": 1}, {"arrows": "to", "from": 51, "id": "51_publisher|52_orig", "to": 52, "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

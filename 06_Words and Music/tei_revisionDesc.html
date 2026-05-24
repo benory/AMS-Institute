@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "black"}, "group": 0, "id": 0, "label": "revisionDesc", "level": 0, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 36}, {"font": {"color": "black"}, "group": 1, "id": 1, "label": "change", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 1, "id": 7, "label": "change", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 1, "id": 13, "label": "change", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 1, "id": 19, "label": "change", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 1, "id": 25, "label": "change", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 1, "id": 31, "label": "change", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 5}, {"font": {"color": "black"}, "group": 2, "id": 2, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 3, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 6, "label": "item", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 4, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 5, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 8, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 9, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 12, "label": "item", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 10, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 11, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 14, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 15, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 18, "label": "item", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 16, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 17, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 20, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 21, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 24, "label": "item", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 22, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 23, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 26, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 27, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 30, "label": "item", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 28, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 29, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 32, "label": "date", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 33, "label": "respStmt", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 2, "id": 36, "label": "item", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 34, "label": "resp", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 35, "label": "name", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 0, "id": "0_revisionDesc|1_change", "to": 1, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_revisionDesc|7_change", "to": 7, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_revisionDesc|13_change", "to": 13, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_revisionDesc|19_change", "to": 19, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_revisionDesc|25_change", "to": 25, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_revisionDesc|31_change", "to": 31, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_change|2_date", "to": 2, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_change|3_respStmt", "to": 3, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_change|6_item", "to": 6, "weight": 1}, {"arrows": "to", "from": 3, "id": "3_respStmt|4_resp", "to": 4, "weight": 1}, {"arrows": "to", "from": 3, "id": "3_respStmt|5_name", "to": 5, "weight": 1}, {"arrows": "to", "from": 7, "id": "7_change|8_date", "to": 8, "weight": 1}, {"arrows": "to", "from": 7, "id": "7_change|9_respStmt", "to": 9, "weight": 1}, {"arrows": "to", "from": 7, "id": "7_change|12_item", "to": 12, "weight": 1}, {"arrows": "to", "from": 9, "id": "9_respStmt|10_resp", "to": 10, "weight": 1}, {"arrows": "to", "from": 9, "id": "9_respStmt|11_name", "to": 11, "weight": 1}, {"arrows": "to", "from": 13, "id": "13_change|14_date", "to": 14, "weight": 1}, {"arrows": "to", "from": 13, "id": "13_change|15_respStmt", "to": 15, "weight": 1}, {"arrows": "to", "from": 13, "id": "13_change|18_item", "to": 18, "weight": 1}, {"arrows": "to", "from": 15, "id": "15_respStmt|16_resp", "to": 16, "weight": 1}, {"arrows": "to", "from": 15, "id": "15_respStmt|17_name", "to": 17, "weight": 1}, {"arrows": "to", "from": 19, "id": "19_change|20_date", "to": 20, "weight": 1}, {"arrows": "to", "from": 19, "id": "19_change|21_respStmt", "to": 21, "weight": 1}, {"arrows": "to", "from": 19, "id": "19_change|24_item", "to": 24, "weight": 1}, {"arrows": "to", "from": 21, "id": "21_respStmt|22_resp", "to": 22, "weight": 1}, {"arrows": "to", "from": 21, "id": "21_respStmt|23_name", "to": 23, "weight": 1}, {"arrows": "to", "from": 25, "id": "25_change|26_date", "to": 26, "weight": 1}, {"arrows": "to", "from": 25, "id": "25_change|27_respStmt", "to": 27, "weight": 1}, {"arrows": "to", "from": 25, "id": "25_change|30_item", "to": 30, "weight": 1}, {"arrows": "to", "from": 27, "id": "27_respStmt|28_resp", "to": 28, "weight": 1}, {"arrows": "to", "from": 27, "id": "27_respStmt|29_name", "to": 29, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_change|32_date", "to": 32, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_change|33_respStmt", "to": 33, "weight": 1}, {"arrows": "to", "from": 31, "id": "31_change|36_item", "to": 36, "weight": 1}, {"arrows": "to", "from": 33, "id": "33_respStmt|34_resp", "to": 34, "weight": 1}, {"arrows": "to", "from": 33, "id": "33_respStmt|35_name", "to": 35, "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
