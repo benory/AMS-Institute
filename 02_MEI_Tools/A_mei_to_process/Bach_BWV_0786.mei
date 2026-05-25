@@ -38,14 +38,14 @@
                   <staffGrp>
                      <staffGrp bar.thru="true" symbol="brace">
                         <staffDef n="1" lines="5" meter.count="4" meter.unit="4">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="G" line="2" />
                         </staffDef>
                         <staffDef n="2" lines="5" meter.count="4" meter.unit="4">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="F" line="4" />
                         </staffDef>
@@ -104,7 +104,9 @@
                               <note xml:id="ns1qvi2" type="mscore-beam-begin" dur="8" pname="f" oct="4">
                                  <accid xml:id="ad4lwrn" accid="s" />
                               </note>
-                              <note xml:id="n609xan" type="mscore-beam-mid" dur="8" pname="e" oct="4" />
+                              <note xml:id="n609xan" type="mscore-beam-mid" dur="8" pname="e" oct="4">
+                                 <accid xml:id="a16sf1zy" accid="n" />
+                              </note>
                               <note xml:id="n18afoe1" type="mscore-beam-mid" dur="8" pname="c" oct="5">
                                  <accid xml:id="a1aidoke" accid="s" />
                               </note>
@@ -143,7 +145,7 @@
                            <rest xml:id="rqsvm7" type="mscore-beam-none" dur="8" />
                         </layer>
                      </staff>
-                     <mordent xml:id="myb0wg3" form="lower" startid="#ns1qvi2" />
+                     <mordent xml:id="myb0wg3" form="lower" startid="#ns1qvi2" accidlower="n" />
                      <mordent xml:id="m19j9w9g" form="lower" startid="#n1cnq5qd" />
                   </measure>
                   <measure xml:id="m6vsjm6" n="3">
@@ -216,7 +218,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <mordent xml:id="mkg7jez" form="upper" startid="#n1f8lbp1" />
+                     <mordent xml:id="mkg7jez" form="upper" startid="#n1f8lbp1" accidupper="n" />
                      <mordent xml:id="m1c69qw6" form="lower" startid="#n1jwzegs" />
                   </measure>
                   <measure xml:id="mwy9u10" n="4">
@@ -277,7 +279,9 @@
                               <note xml:id="n17sji4r" type="mscore-beam-begin" dur="8" pname="c" oct="3">
                                  <accid xml:id="axf5eo5" accid="s" />
                               </note>
-                              <note xml:id="npd7yks" type="mscore-beam-mid" dur="8" pname="b" oct="2" />
+                              <note xml:id="npd7yks" type="mscore-beam-mid" dur="8" pname="b" oct="2">
+                                 <accid xml:id="a1fpdrt3" accid="n" />
+                              </note>
                               <note xml:id="n1q8lft8" type="mscore-beam-mid" dur="8" pname="g" oct="3">
                                  <accid xml:id="a1nrkw99" accid="s" />
                               </note>
@@ -296,7 +300,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <mordent xml:id="m1hcfta8" form="lower" startid="#n17sji4r" />
+                     <mordent xml:id="m1hcfta8" form="lower" startid="#n17sji4r" accidlower="n" />
                      <mordent xml:id="mlj7229" form="lower" startid="#n14kuig1" />
                   </measure>
                   <measure xml:id="m1klog7m" n="5">
@@ -914,7 +918,9 @@
                               <note xml:id="ntt2tpu" type="mscore-beam-begin" dur="8" pname="f" oct="4">
                                  <accid xml:id="a1dgq55h" accid="s" />
                               </note>
-                              <note xml:id="n1f5ng3e" type="mscore-beam-mid" dur="8" pname="e" oct="4" />
+                              <note xml:id="n1f5ng3e" type="mscore-beam-mid" dur="8" pname="e" oct="4">
+                                 <accid xml:id="a1eax2om" accid="n" />
+                              </note>
                               <note xml:id="n1l1b8o2" type="mscore-beam-mid" dur="8" pname="a" oct="4" />
                               <note xml:id="ngj7z1o" dur="8" pname="e" oct="4" />
                            </beam>
@@ -952,7 +958,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <mordent xml:id="m11rwac8" form="lower" startid="#ntt2tpu" />
+                     <mordent xml:id="m11rwac8" form="lower" startid="#ntt2tpu" accidlower="n" />
                   </measure>
                   <measure xml:id="myz003d" n="15">
                      <staff xml:id="m15s1" n="1">
@@ -1291,7 +1297,9 @@
                               <note xml:id="n1xo0y0l" type="mscore-beam-begin" dur="8" pname="f" oct="3">
                                  <accid xml:id="a1dsvwnf" accid="s" />
                               </note>
-                              <note xml:id="n1xcthun" type="mscore-beam-mid" dur="8" pname="e" oct="3" />
+                              <note xml:id="n1xcthun" type="mscore-beam-mid" dur="8" pname="e" oct="3">
+                                 <accid xml:id="a1dodqc0" accid="n" />
+                              </note>
                               <note xml:id="n1tete1a" type="mscore-beam-mid" dur="8" pname="c" oct="4">
                                  <accid xml:id="as5mb1q" accid="s" />
                               </note>
@@ -1314,7 +1322,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <mordent xml:id="mzmz338" form="lower" startid="#n1xo0y0l" />
+                     <mordent xml:id="mzmz338" form="lower" startid="#n1xo0y0l" accidlower="n" />
                      <mordent xml:id="mh4hpbe" form="lower" startid="#n1icjhao" />
                   </measure>
                   <measure xml:id="m1imsk98" n="20">

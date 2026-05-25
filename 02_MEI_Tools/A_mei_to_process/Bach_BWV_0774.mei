@@ -38,14 +38,14 @@
                   <staffGrp>
                      <staffGrp bar.thru="true" symbol="brace">
                         <staffDef n="1" lines="5" meter.count="3" meter.unit="8">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="G" line="2" />
                         </staffDef>
                         <staffDef n="2" lines="5" meter.count="3" meter.unit="8">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="F" line="4" />
                         </staffDef>
@@ -130,7 +130,9 @@
                               <note xml:id="n1re0xq" dur="16" pname="c" oct="5">
                                  <accid xml:id="acd4pfw" accid="s" />
                               </note>
-                              <note xml:id="n1ynkxa4" dur="16" pname="d" oct="5" />
+                              <note xml:id="n1ynkxa4" dur="16" pname="d" oct="5">
+                                 <accid xml:id="aeqta03" accid="n" />
+                              </note>
                            </beam>
                         </layer>
                      </staff>
@@ -150,7 +152,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <mordent xml:id="m1ny8act" form="upper" startid="#n1re0xq" />
+                     <mordent xml:id="m1ny8act" form="upper" startid="#n1re0xq" accidupper="n" />
                   </measure>
                   <measure xml:id="m1aeja1i" n="5">
                      <staff xml:id="m5s1" n="1">
@@ -1215,7 +1217,9 @@
                               <note xml:id="n83lxse" type="mscore-beam-mid" dur="8" pname="c" oct="5">
                                  <accid xml:id="a14uloqj" accid="s" />
                               </note>
-                              <note xml:id="n1phfdoy" dur="8" pname="d" oct="5" />
+                              <note xml:id="n1phfdoy" dur="8" pname="d" oct="5">
+                                 <accid xml:id="ackv6k3" accid="n" />
+                              </note>
                            </beam>
                         </layer>
                      </staff>
@@ -1235,7 +1239,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <turn xml:id="trlkmhy" form="upper" startid="#n83lxse" />
+                     <turn xml:id="trlkmhy" form="upper" accidupper="n" accidlower="n" startid="#n83lxse" />
                      <tie xml:id="t2ru4c6" startid="#n1phfdoy" endid="#n1xw7zpu" />
                   </measure>
                   <measure xml:id="mhbu8s3" n="42">
@@ -1357,7 +1361,9 @@
                               <note xml:id="n1grxmwj" dur="16" pname="c" oct="5">
                                  <accid xml:id="a19xcymm" accid="s" />
                               </note>
-                              <note xml:id="nvz6m77" dur="16" pname="d" oct="5" />
+                              <note xml:id="nvz6m77" dur="16" pname="d" oct="5">
+                                 <accid xml:id="a1c2mn5c" accid="n" />
+                              </note>
                            </beam>
                         </layer>
                      </staff>
@@ -1377,7 +1383,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <mordent xml:id="m1u42izz" form="upper" startid="#n1grxmwj" />
+                     <mordent xml:id="m1u42izz" form="upper" startid="#n1grxmwj" accidupper="n" />
                   </measure>
                   <measure xml:id="m1d3lqp8" n="47">
                      <staff xml:id="m47s1" n="1">

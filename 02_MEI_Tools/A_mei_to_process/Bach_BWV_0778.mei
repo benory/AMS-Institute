@@ -38,14 +38,14 @@
                   <staffGrp>
                      <staffGrp bar.thru="true" symbol="brace">
                         <staffDef n="1" lines="5" meter.count="4" meter.unit="4">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="G" line="2" />
                         </staffDef>
                         <staffDef n="2" lines="5" meter.count="4" meter.unit="4">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="F" line="4" />
                         </staffDef>
@@ -1350,7 +1350,9 @@
                               <note xml:id="n1n2kfwn" type="mscore-beam-begin" dots="1" dur="8" pname="f" oct="4">
                                  <accid xml:id="a1x6bvg8" accid="s" />
                               </note>
-                              <note xml:id="ns15ukc" dur="16" pname="e" oct="4" />
+                              <note xml:id="ns15ukc" dur="16" pname="e" oct="4">
+                                 <accid xml:id="a68zz5q" accid="n" />
+                              </note>
                            </beam>
                            <note xml:id="nyx6lxf" dur="2" pname="e" oct="4" stem.dir="up" />
                         </layer>
@@ -1369,7 +1371,7 @@
                         </layer>
                      </staff>
                      <mordent xml:id="m16w3823" form="lower" startid="#nmv9ng9" />
-                     <mordent xml:id="m15107ba" form="lower" startid="#n1n2kfwn" />
+                     <mordent xml:id="m15107ba" form="lower" startid="#n1n2kfwn" accidlower="n" />
                   </measure>
                </section>
             </score>

@@ -38,14 +38,14 @@
                   <staffGrp>
                      <staffGrp bar.thru="true" symbol="brace">
                         <staffDef n="1" lines="5" meter.count="4" meter.unit="4">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="G" line="2" />
                         </staffDef>
                         <staffDef n="2" lines="5" meter.count="4" meter.unit="4">
-                           <label><lb />          Piano<lb />         </label>
-                           <labelAbbr><lb />          Pno.<lb />         </labelAbbr>
+                           <label>          Piano</label>
+                           <labelAbbr>          Pno.</labelAbbr>
                            <instrDef midi.instrnum="0" />
                            <clef shape="F" line="4" />
                         </staffDef>
@@ -1380,7 +1380,7 @@
                         </layer>
                      </staff>
                      <mordent xml:id="m1yn2id7" form="upper" startid="#ndtszxu" />
-                     <mordent xml:id="m15qw0ii" form="upper" startid="#n11p7r9x" />
+                     <mordent xml:id="m15qw0ii" form="upper" startid="#n11p7r9x" accidupper="n" />
                   </measure>
                   <measure xml:id="m1ka5ytn" n="21">
                      <staff xml:id="m21s1" n="1">
