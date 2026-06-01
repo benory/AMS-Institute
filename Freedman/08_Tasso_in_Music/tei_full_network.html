@@ -1,0 +1,204 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 800px;
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+        #loadingBar {
+            position:absolute;
+            top:0px;
+            left:0px;
+            width: 100%;
+            height: 800px;
+            background-color:rgba(200,200,200,0.8);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity:1;
+        }
+
+        #bar {
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:20px;
+            height:20px;
+            margin:auto auto auto auto;
+            border-radius:11px;
+            border:2px solid rgba(30,30,30,0.05);
+            background: rgb(0, 173, 246); /* Old browsers */
+            box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+        }
+
+        #border {
+            position:absolute;
+            top:10px;
+            left:10px;
+            width:500px;
+            height:23px;
+            margin:auto auto auto auto;
+            box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+            border-radius:10px;
+        }
+
+        #text {
+            position:absolute;
+            top:8px;
+            left:530px;
+            width:30px;
+            height:50px;
+            margin:auto auto auto auto;
+            font-size:22px;
+            color: #000000;
+        }
+
+        div.outerBorder {
+            position:relative;
+            top:400px;
+            width:600px;
+            height:44px;
+            margin:auto auto auto auto;
+            border:8px solid rgba(0,0,0,0.1);
+            background: rgb(252,252,252); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+            border-radius:72px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+<div id="loadingBar">
+    <div class="outerBorder">
+        <div id="text">0%</div>
+        <div id="border">
+            <div id="bar"></div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "black"}, "group": 0, "id": 0, "label": "TEI", "level": 0, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 135}, {"font": {"color": "black"}, "group": 1, "id": 1, "label": "teiHeader", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 13}, {"font": {"color": "black"}, "group": 1, "id": 15, "label": "text", "level": 1, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 120}, {"font": {"color": "black"}, "group": 2, "id": 2, "label": "fileDesc", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 7}, {"font": {"color": "black"}, "group": 2, "id": 10, "label": "encodingDesc", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 4}, {"font": {"color": "black"}, "group": 3, "id": 3, "label": "titleStmt", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 3, "id": 5, "label": "publicationStmt", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 2}, {"font": {"color": "black"}, "group": 3, "id": 8, "label": "sourceDesc", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 4, "id": 4, "label": "title", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 6, "label": "publisher", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 7, "label": "idno", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 9, "label": "p", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 3, "id": 11, "label": "metDecl (type=met)", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 3}, {"font": {"color": "black"}, "group": 4, "id": 12, "label": "metSym (value=+)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 13, "label": "metSym (value=-)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 4, "id": 14, "label": "metSym (value=_)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 2, "id": 16, "label": "body", "level": 2, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 119}, {"font": {"color": "black"}, "group": 3, "id": 17, "label": "lg", "level": 3, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 118}, {"font": {"color": "black"}, "group": 4, "id": 18, "label": "l (rhyme=a\nmet=-+-++--+-+-\nenjamb=yes)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 14}, {"font": {"color": "black"}, "group": 4, "id": 32, "label": "l (rhyme=b\nmet=+--+---+-+-)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 13}, {"font": {"color": "black"}, "group": 4, "id": 45, "label": "l (rhyme=a\nmet=+--+---+-+-\nenjamb=yes)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 14}, {"font": {"color": "black"}, "group": 4, "id": 59, "label": "l (rhyme=b\nmet=-+---++--+-)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 13}, {"font": {"color": "black"}, "group": 4, "id": 72, "label": "l (rhyme=a\nmet=+-+--++--+-)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 14}, {"font": {"color": "black"}, "group": 4, "id": 86, "label": "l (rhyme=b\nmet=+-+--+-+-+-)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 13}, {"font": {"color": "black"}, "group": 4, "id": 99, "label": "l (rhyme=c\nmet=-+-+---+-+-\nenjamb=yes)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 15}, {"font": {"color": "black"}, "group": 4, "id": 114, "label": "l (rhyme=c\nmet=-+-+---+-+-)", "level": 4, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 14}, {"font": {"color": "black"}, "group": 5, "id": 19, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 20, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 21, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 23, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 24, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 26, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 27, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 28, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 29, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 30, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 31, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 22, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 25, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 33, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 34, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 35, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 37, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 38, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 39, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 40, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 41, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 42, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 43, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 44, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 36, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 46, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 47, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 48, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 49, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 50, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 52, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 53, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 54, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 55, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 57, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 58, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 51, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 56, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 60, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 61, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 62, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 63, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 64, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 65, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 66, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 68, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 69, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 70, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 71, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 67, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 73, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 74, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 75, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 76, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 77, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 79, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 80, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 82, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 83, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 84, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 85, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 78, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 81, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 87, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 88, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 89, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 90, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 91, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 93, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 94, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 95, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 96, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 97, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 98, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 92, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 100, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 101, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 102, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 104, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 105, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 107, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 108, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 109, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 110, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 112, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 113, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 103, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 106, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 111, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 115, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 116, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 117, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 119, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 120, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 121, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 122, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 123, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 124, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 5, "id": 125, "label": "seg (type=syl met=+)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 1}, {"font": {"color": "black"}, "group": 5, "id": 127, "label": "seg (type=syl met=-)", "level": 5, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 118, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}, {"font": {"color": "black"}, "group": 6, "id": 126, "label": "c (met=_)", "level": 6, "scaling": {"label": {"enabled": true}}, "shape": "dot", "size": 10, "value": 0}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 0, "id": "0_TEI|1_teiHeader", "to": 1, "weight": 1}, {"arrows": "to", "from": 0, "id": "0_TEI|15_text", "to": 15, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_teiHeader|2_fileDesc", "to": 2, "weight": 1}, {"arrows": "to", "from": 1, "id": "1_teiHeader|10_encodingDesc", "to": 10, "weight": 1}, {"arrows": "to", "from": 2, "id": "2_fileDesc|3_titleStmt", "to": 3, "weight": 1}, {"arrows": "to", "from": 2, "id": "2_fileDesc|5_publicationStmt", "to": 5, "weight": 1}, {"arrows": "to", "from": 2, "id": "2_fileDesc|8_sourceDesc", "to": 8, "weight": 1}, {"arrows": "to", "from": 3, "id": "3_titleStmt|4_title", "to": 4, "weight": 1}, {"arrows": "to", "from": 5, "id": "5_publicationStmt|6_publisher", "to": 6, "weight": 1}, {"arrows": "to", "from": 5, "id": "5_publicationStmt|7_idno", "to": 7, "weight": 1}, {"arrows": "to", "from": 8, "id": "8_sourceDesc|9_p", "to": 9, "weight": 1}, {"arrows": "to", "from": 10, "id": "10_encodingDesc|11_metDecl", "to": 11, "weight": 1}, {"arrows": "to", "from": 11, "id": "11_metDecl|12_metSym", "to": 12, "weight": 1}, {"arrows": "to", "from": 11, "id": "11_metDecl|13_metSym", "to": 13, "weight": 1}, {"arrows": "to", "from": 11, "id": "11_metDecl|14_metSym", "to": 14, "weight": 1}, {"arrows": "to", "from": 15, "id": "15_text|16_body", "to": 16, "weight": 1}, {"arrows": "to", "from": 16, "id": "16_body|17_lg", "to": 17, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|18_l", "to": 18, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|32_l", "to": 32, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|45_l", "to": 45, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|59_l", "to": 59, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|72_l", "to": 72, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|86_l", "to": 86, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|99_l", "to": 99, "weight": 1}, {"arrows": "to", "from": 17, "id": "17_lg|114_l", "to": 114, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|19_seg", "to": 19, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|20_seg", "to": 20, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|21_seg", "to": 21, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|23_seg", "to": 23, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|24_seg", "to": 24, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|26_seg", "to": 26, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|27_seg", "to": 27, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|28_seg", "to": 28, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|29_seg", "to": 29, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|30_seg", "to": 30, "weight": 1}, {"arrows": "to", "from": 18, "id": "18_l|31_seg", "to": 31, "weight": 1}, {"arrows": "to", "from": 21, "id": "21_seg|22_c", "to": 22, "weight": 1}, {"arrows": "to", "from": 24, "id": "24_seg|25_c", "to": 25, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|33_seg", "to": 33, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|34_seg", "to": 34, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|35_seg", "to": 35, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|37_seg", "to": 37, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|38_seg", "to": 38, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|39_seg", "to": 39, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|40_seg", "to": 40, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|41_seg", "to": 41, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|42_seg", "to": 42, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|43_seg", "to": 43, "weight": 1}, {"arrows": "to", "from": 32, "id": "32_l|44_seg", "to": 44, "weight": 1}, {"arrows": "to", "from": 35, "id": "35_seg|36_c", "to": 36, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|46_seg", "to": 46, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|47_seg", "to": 47, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|48_seg", "to": 48, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|49_seg", "to": 49, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|50_seg", "to": 50, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|52_seg", "to": 52, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|53_seg", "to": 53, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|54_seg", "to": 54, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|55_seg", "to": 55, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|57_seg", "to": 57, "weight": 1}, {"arrows": "to", "from": 45, "id": "45_l|58_seg", "to": 58, "weight": 1}, {"arrows": "to", "from": 50, "id": "50_seg|51_c", "to": 51, "weight": 1}, {"arrows": "to", "from": 55, "id": "55_seg|56_c", "to": 56, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|60_seg", "to": 60, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|61_seg", "to": 61, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|62_seg", "to": 62, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|63_seg", "to": 63, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|64_seg", "to": 64, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|65_seg", "to": 65, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|66_seg", "to": 66, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|68_seg", "to": 68, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|69_seg", "to": 69, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|70_seg", "to": 70, "weight": 1}, {"arrows": "to", "from": 59, "id": "59_l|71_seg", "to": 71, "weight": 1}, {"arrows": "to", "from": 66, "id": "66_seg|67_c", "to": 67, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|73_seg", "to": 73, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|74_seg", "to": 74, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|75_seg", "to": 75, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|76_seg", "to": 76, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|77_seg", "to": 77, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|79_seg", "to": 79, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|80_seg", "to": 80, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|82_seg", "to": 82, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|83_seg", "to": 83, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|84_seg", "to": 84, "weight": 1}, {"arrows": "to", "from": 72, "id": "72_l|85_seg", "to": 85, "weight": 1}, {"arrows": "to", "from": 77, "id": "77_seg|78_c", "to": 78, "weight": 1}, {"arrows": "to", "from": 80, "id": "80_seg|81_c", "to": 81, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|87_seg", "to": 87, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|88_seg", "to": 88, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|89_seg", "to": 89, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|90_seg", "to": 90, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|91_seg", "to": 91, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|93_seg", "to": 93, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|94_seg", "to": 94, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|95_seg", "to": 95, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|96_seg", "to": 96, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|97_seg", "to": 97, "weight": 1}, {"arrows": "to", "from": 86, "id": "86_l|98_seg", "to": 98, "weight": 1}, {"arrows": "to", "from": 91, "id": "91_seg|92_c", "to": 92, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|100_seg", "to": 100, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|101_seg", "to": 101, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|102_seg", "to": 102, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|104_seg", "to": 104, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|105_seg", "to": 105, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|107_seg", "to": 107, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|108_seg", "to": 108, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|109_seg", "to": 109, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|110_seg", "to": 110, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|112_seg", "to": 112, "weight": 1}, {"arrows": "to", "from": 99, "id": "99_l|113_seg", "to": 113, "weight": 1}, {"arrows": "to", "from": 102, "id": "102_seg|103_c", "to": 103, "weight": 1}, {"arrows": "to", "from": 105, "id": "105_seg|106_c", "to": 106, "weight": 1}, {"arrows": "to", "from": 110, "id": "110_seg|111_c", "to": 111, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|115_seg", "to": 115, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|116_seg", "to": 116, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|117_seg", "to": 117, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|119_seg", "to": 119, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|120_seg", "to": 120, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|121_seg", "to": 121, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|122_seg", "to": 122, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|123_seg", "to": 123, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|124_seg", "to": 124, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|125_seg", "to": 125, "weight": 1}, {"arrows": "to", "from": 114, "id": "114_l|127_seg", "to": 127, "weight": 1}, {"arrows": "to", "from": 117, "id": "117_seg|118_c", "to": 118, "weight": 1}, {"arrows": "to", "from": 125, "id": "125_seg|126_c", "to": 126, "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+        network.on("stabilizationProgress", function(params) {
+      		document.getElementById('loadingBar').removeAttribute("style");
+	        var maxWidth = 496;
+	        var minWidth = 20;
+	        var widthFactor = params.iterations/params.total;
+	        var width = Math.max(minWidth,maxWidth * widthFactor);
+
+	        document.getElementById('bar').style.width = width + 'px';
+	        document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+	    });
+	    network.once("stabilizationIterationsDone", function() {
+	        document.getElementById('text').innerHTML = '100%';
+	        document.getElementById('bar').style.width = '496px';
+	        document.getElementById('loadingBar').style.opacity = 0;
+	        // really clean the dom element
+	        setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+	    });
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

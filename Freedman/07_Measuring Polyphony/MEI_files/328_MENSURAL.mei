@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+	<meiHead xml:id="m-2">
+		<fileDesc>
+			<titleStmt>
+				<title>Ad amorem sequitur: A Digital Edition</title>
+				<editor>Karen Desmond</editor> 
+				 <funder>
+					<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>
+				</funder>
+				<funder>
+					<corpName> Schulich School of Music, McGill University</corpName> 
+				</funder> 
+				 <funder>
+					<corpName>Brandeis University</corpName>
+				</funder>
+				 <funder>
+					<corpName>National Endowment for Humanities (NEH)</corpName> 
+				</funder> 
+				 <respStmt> 
+					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+					<persName role="encoder" isodate="2015-4-18" xml:id="SM">Sadie Menicanin</persName> 
+					<persName role="proofreader" isodate="2017-12-16" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="2017-12-16" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="2017-12-16" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2017-12-16" xml:id="DS">Daniel Shapiro</persName> 
+				</respStmt>
+			</titleStmt>
+			<pubStmt>
+				<publisher>
+					 <persName>Karen Desmond</persName>
+					<corpName>Brandeis University</corpName>
+				 </publisher>
+				<date>2018</date> 
+				<availability>
+					<useRestrict>Available for purposes of academic research and teaching only.</useRestrict>
+				</availability>
+			</pubStmt> 
+			<seriesStmt> 
+				<title>Measuring Polyphony: Digital Encodings of Late Medieval Music</title> 
+				<editor> 
+					<persName>Karen Desmond</persName> 
+				</editor>
+				<identifier>
+					<ref targettype="home_page" target="http://www.measuringpolyphony.org"/>
+					</identifier>
+				</seriesStmt>
+				<sourceDesc>
+					<source>
+						<titleStmt>
+							<title>
+								<identifier>Mo</identifier>
+							</title>
+						</titleStmt>
+						<notesStmt>
+							<annot>Primary manuscript source for this encoding.</annot>
+							<annot label="original_clefs">Original clefs for this source: c3 c3 f3</annot>
+							<annot label="commentary">Mot 23.3 dot not present in MS / Ten 33 ‘iterum’ annotation under tenor part here and two short strokes on staff second line indicates repetition of tenor statement / 43-46 last 4 notes of second statement of tenor pitches to be replaced by these 4L notated at end of tenor part / </annot>
+						</notesStmt>
+						<itemList>
+							<item targettype="other_images" target="http://bvmm.irht.cnrs.fr/consult/consult.php?reproductionId=8028&amp;VUE_ID=1261846" motetus="Ad amorem sequitur" folio="378v, 379r"></item>
+							<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/888/"></item>
+							<item targettype="DIAMM_composition_record" target="https://www.diamm.ac.uk/compositions/3526/"></item>
+						</itemList>
+					</source>
+					<source>
+						<titleStmt>
+							<title>[Other concordant sources]</title>
+						</titleStmt>
+						<notesStmt>
+							<annot></annot>
+						</notesStmt>
+					</source>
+				</sourceDesc>
+			</fileDesc>
+			<encodingDesc> 
+				<appInfo>
+					<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name>Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application> 
+				<application xml:id="meiMENS" isodate="2016-4-29">
+					<name>CMN-MEI to MensuralMEI Translator</name>
+				</application>
+			</appInfo>
+			<editorialDecl>
+				<p>
+					Scanned file corrected from Rokseth. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Text follows Mo.</p>
+				</editorialDecl>
+				<projectDesc>
+					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
+				</projectDesc>
+			</encodingDesc>
+			<workDesc>
+				<work>
+					<identifier>
+						<identifier type="catalogue_number">Mo 8,328</identifier>
+					</identifier>
+					<title>Ad amorem sequitur</title>
+					<composer>Anonymous</composer>
+					<incip>
+						<incipText label="triplum" corresp="#triplum">
+							<lg><l>Amor potest conqueri</l></lg>
+					</incipText>
+					<incipText label="motetus" corresp="#motetus">
+						<lg><l>Ad amorem sequitur</l></lg>
+				</incipText>
+				<incipText label="tenor" corresp="#tenor">
+					<lg><l>TENOR</l></lg>
+			</incipText>
+		</incip>
+		
+			<classification>
+				<termList>
+					<term>Motet</term>
+				</termList>
+			</classification>
+		</work>
+	</workDesc>
+	<revisionDesc>
+		<change resp="#KD" isodate="2018-05-31">
+			<changeDesc>
+				<p></p>
+			</changeDesc>
+		</change>
+	</revisionDesc>
+	</meiHead>
+	<music xml:id="m-22">
+		<body xml:id="m-23">
+			<mdiv xml:id="m-24">
+				<score xml:id="m-25">
+					<scoreDef xml:id="m-26" midi.bpm="800">
+						<staffGrp xml:id="m-37" n="1" symbol="bracket">
+							<staffDef xml:id="triplum" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1" modusmaior="2" modusminor="2" tempus="3" notationtype="mensural.black">
+									<label>triplum</label>
+							</staffDef>
+							<staffDef xml:id="motetus" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2" modusmaior="2" modusminor="2" tempus="3" notationtype="mensural.black">
+									<label>motetus</label>
+							</staffDef>
+							<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3" modusmaior="2" modusminor="2" tempus="3" notationtype="mensural.black">
+									<label>tenor</label>
+							</staffDef>
+						</staffGrp>
+					</scoreDef>
+					<section xml:id="m-38">
+						<staff xml:id="m-40" n="1">
+							<layer xml:id="m-41" n="1">
+								<note xml:id="m-42" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-57" n="1">
+										<syl xml:id="m-58" con="d" wordpos="i">A</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-7ba3c9fd-b9c5-400c-a20f-56c219e04ed7" />
+								<note xml:id="m-55" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-59" n="1">
+										<syl xml:id="m-60" wordpos="t">mor</syl>
+									</verse>
+								</note>
+								<note xml:id="m-56" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-73" n="1">
+										<syl xml:id="m-74" con="d" wordpos="i">po</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-6672a088-0a94-4911-980f-febb55120b4e" />
+								<note xml:id="m-72" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-75" n="1">
+										<syl xml:id="m-76" wordpos="t">test</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-9dee2441-cb47-453a-a946-68ddd0b3a14a" />
+								<note xml:id="m-92" dur="brevis" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-108" n="1">
+										<syl xml:id="m-109" con="d" wordpos="i">con</syl>
+									</verse>
+								</note>
+								<note xml:id="m-94" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-110" n="1">
+										<syl xml:id="m-111" con="d" wordpos="m">que</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-bb7036aa-4035-4abd-b19a-2ba88960c8df" />
+								<note xml:id="m-107" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-112" n="1">
+										<syl xml:id="m-113" wordpos="t">ri</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-b8a41a53-ce4d-484c-b386-f7b0f9eee7dd" />
+								<rest xml:id="m-130" dur="longa" EVENTUALDUR="2B" />
+								<barLine form="dashed" xml:id="m-7f5d7735-f292-4431-a120-21188e9271aa" />
+								<note xml:id="m-145" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-157" n="1">
+										<syl xml:id="m-158" con="d" wordpos="i">ui</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-552060ca-001c-4fab-9711-bd726f18381d" />
+								<note xml:id="m-155" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-159" n="1">
+										<syl xml:id="m-160" wordpos="t">dens</syl>
+									</verse>
+								</note>
+								<note xml:id="m-156" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-175" n="1">
+										<syl xml:id="m-176" con="d" wordpos="i">se</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-987b5e44-41bb-4074-ba05-0cc42b6a2b99" />
+								<note xml:id="m-173" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-177" n="1">
+										<syl xml:id="m-178" wordpos="t">mine</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-44224438-c12a-4db6-95b1-b728a89ecebd" />
+								<note xml:id="m-198" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-212" n="1">
+										<syl xml:id="m-213" con="d" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-199" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-214" n="1">
+										<syl xml:id="m-215" con="d" wordpos="m">pri</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-05a87c86-3407-4392-9262-cb2c7e6e1cc1" />
+								<note xml:id="m-211" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-216" n="1">
+										<syl xml:id="m-217" wordpos="t">mi</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-1c6ecddb-4f66-400b-826a-6ff6118789fc" />
+								<note xml:id="m-227" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-229" n="1">
+										<syl xml:id="m-230" con="d" wordpos="i">qui</syl>
+									</verse>
+								</note>
+								<note xml:id="m-228" dur="brevis" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-231" n="1">
+										<syl xml:id="m-232" wordpos="t">a</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-07878a7f-703e-4562-9a14-75f585b75014" />
+								<note xml:id="m-252" dur="brevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-254" n="1">
+										<syl xml:id="m-255" con="d" wordpos="i">ce</syl>
+									</verse>
+								</note>
+								<note xml:id="m-253" dur="brevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-256" n="1">
+										<syl xml:id="m-257" wordpos="t">pit</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-4aa32da2-c5bf-4c7f-b7ab-b116f3bfa1e1" />
+								<note xml:id="m-271" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-287" n="1">
+										<syl xml:id="m-288" con="d" wordpos="i">mi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-273" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-289" n="1">
+										<syl xml:id="m-290" con="d" wordpos="m">nu</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-5c21c211-b3e2-465c-a293-a2cf82fc8a1f" />
+								<note xml:id="m-286" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-291" n="1">
+										<syl xml:id="m-292" wordpos="t">i</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-c5ff6a73-735d-4860-8111-0cd443a6929c" />
+								<note xml:id="m-312" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-314" n="1">
+										<syl xml:id="m-315" con="d" wordpos="i">fi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-313" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-316" n="1">
+										<syl xml:id="m-317" wordpos="t">des</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-ec27ad77-9255-4317-b2cc-64b3a18e906d" />
+								<note xml:id="m-334" dur="brevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-336" n="1">
+										<syl xml:id="m-337" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-335" dur="brevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-376" n="1">
+										<syl xml:id="m-377" con="d" wordpos="i">con</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-357e7466-1008-4212-9dba-100ac1a9c6df" />
+								<note xml:id="m-355" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-378" n="1">
+										<syl xml:id="m-379" con="d" wordpos="m">stan</syl>
+									</verse>
+								</note>
+								<note xml:id="m-356" dur="semibrevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-380" n="1">
+										<syl xml:id="m-381" con="d" wordpos="m">ci</syl>
+									</verse>
+								</note>
+								<note xml:id="m-358" dur="semibrevis" oct="4" oct.ges="3" pname="c" />
+								<note xml:id="m-359" dur="semibrevis" oct="3" oct.ges="2" pname="b" />
+								<barLine form="dashed" xml:id="m-16875f69-c378-479f-8506-c29cb6bfb574" />
+								<note xml:id="m-375" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-382" n="1">
+										<syl xml:id="m-383" wordpos="t">a</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-f2d67749-85e1-4e3a-8895-ef6253509487" />
+								<rest xml:id="m-401" dur="longa" EVENTUALDUR="2B" />
+								<barLine form="dashed" xml:id="m-bce06f50-4de3-480e-98cb-f668adcc8e5b" />
+								<note xml:id="m-413" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-417" n="1">
+										<syl xml:id="m-418" wordpos="i">que</syl>
+									</verse>
+								</note>
+								<note xml:id="m-414" dur="semibrevis" oct="4" oct.ges="3" pname="d" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-419" n="1">
+										<syl xml:id="m-420" con="d" wordpos="i">si</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-08a71bb1-2959-4da1-90aa-ba269c8e1ad8" />
+								<note xml:id="m-415" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-421" n="1">
+										<syl xml:id="m-422" wordpos="t">bi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-416" dur="semibrevis" oct="4" oct.ges="3" pname="g" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-463" n="1">
+										<syl xml:id="m-464" con="d" wordpos="i">re</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-43e1522a-1ba3-417b-a5f7-31f758c026bc" />
+								<note xml:id="m-444" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-465" n="1">
+										<syl xml:id="m-466" con="d" wordpos="m">sti</syl>
+									</verse>
+								</note>
+								<note xml:id="m-445" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-467" n="1">
+										<syl xml:id="m-468" con="d" wordpos="m">tu</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-f005f65a-2f0c-4591-96f4-040f1d1f45b6" />
+								<note xml:id="m-462" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-469" n="1">
+										<syl xml:id="m-470" wordpos="t">i</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-b527e663-1789-4698-8e2d-c688f0c8c77b" />
+								<rest xml:id="m-495" dur="longa" EVENTUALDUR="2B" />
+								<barLine form="dashed" xml:id="m-8df70310-f9cf-4770-941d-961ae3408f71" />
+								<note xml:id="m-513" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-534" n="1">
+										<syl xml:id="m-535" con="d" wordpos="i">pi</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-abc0c034-b698-4e0b-afb9-ccfb6699c011" />
+								<note xml:id="m-531" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<note xml:id="m-532" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-536" n="1">
+										<syl xml:id="m-537" wordpos="t">tum</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-2b9e93eb-d55f-4f02-b3c1-08cfbee567ee" />
+								<note xml:id="m-548" dur="brevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-576" n="1">
+										<syl xml:id="m-577" con="d" wordpos="i">iu</syl>
+									</verse>
+								</note>
+								<note xml:id="m-549" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-578" n="1">
+										<syl xml:id="m-579" con="d" wordpos="m">di</syl>
+									</verse>
+								</note>
+								<note xml:id="m-550" dur="semibrevis" oct="4" oct.ges="3" pname="d" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-580" n="1">
+										<syl xml:id="m-581" con="d" wordpos="m">ci</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-2a347c67-bbff-4973-8a4e-2fa55cbdf90b" />
+								<barLine form="dashed" xml:id="m-5ac52732-e9a8-4868-a793-19f292d5b4fe" />
+								<note xml:id="m-573" dur="semibrevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-582" n="1">
+										<syl xml:id="m-583" wordpos="t">i</syl>
+									</verse>
+								</note>
+								<note xml:id="m-574" dur="semibrevis" oct="4" oct.ges="3" pname="c" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-584" n="1">
+										<syl xml:id="m-585" con="d" wordpos="i">pe</syl>
+									</verse>
+								</note>
+								<note xml:id="m-575" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-586" n="1">
+										<syl xml:id="m-587" wordpos="t">tit</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-47910c0e-7e17-44eb-8de8-97aeb3b9ca58" />
+								<note xml:id="m-607" dur="brevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-613" n="1">
+										<syl xml:id="m-614" wordpos="i">cum</syl>
+									</verse>
+								</note>
+								<note xml:id="m-608" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-655" n="1">
+										<syl xml:id="m-656" con="d" wordpos="i">in</syl>
+									</verse>
+								</note>
+								<note xml:id="m-610" dur="semibrevis" oct="4" oct.ges="3" pname="e" />
+								<note xml:id="m-611" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-3a141cde-206d-4ee5-a4ca-c004b85dfceb" />
+								<note xml:id="m-630" dur="semibrevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-657" n="1">
+										<syl xml:id="m-658" con="d" wordpos="m">stan</syl>
+									</verse>
+								</note>
+								<note xml:id="m-632" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-633" dur="semibrevis" oct="4" oct.ges="3" pname="c" />
+								<note xml:id="m-634" dur="semibrevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-659" n="1">
+										<syl xml:id="m-660" con="d" wordpos="m">ci</syl>
+									</verse>
+								</note>
+								<note xml:id="m-636" dur="semibrevis" oct="4" oct.ges="3" pname="c" />
+								<note xml:id="m-637" dur="semibrevis" oct="3" oct.ges="2" pname="b" />
+								<barLine form="dashed" xml:id="m-118d76c9-496b-4069-9f44-0446d464a531" />
+								<note xml:id="m-654" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-661" n="1">
+										<syl xml:id="m-662" wordpos="t">a</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-25c10e68-2a4d-4431-afef-70049b76e2c9" />
+								<note xml:id="m-684" dur="brevis" oct="3" oct.ges="2" pname="b" />
+								<rest xml:id="m-685" dur="brevis" />
+								<barLine form="dashed" xml:id="m-c01b8869-6add-4cb4-aa2a-9f00e9522dfa" />
+								<note xml:id="m-699" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-97cceaa9-b936-4cb1-84e5-e784debd0056" />
+								<rest xml:id="m-710" dur="brevis" />
+								<note xml:id="m-712" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-0ea3c49c-6cb4-4329-9f81-982d17fa2d8a" />
+								<note xml:id="m-724" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-c3a66af1-58c0-404a-80ea-bd3160475ae0" />
+								<note xml:id="m-734" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-735" dur="brevis" />
+								<barLine form="dashed" xml:id="m-d887b930-05e0-4e59-9358-1cf134006375" />
+								<note xml:id="m-749" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-63d83eab-6c9d-4558-a516-98ea36aed433" />
+								<rest xml:id="m-759" dur="brevis" />
+								<note xml:id="m-761" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-fcb761f8-1c55-4bf3-b887-a38871a7b7ea" />
+								<note xml:id="m-774" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-835ae480-2452-4fcd-93f2-574c1631ab48" />
+								<note xml:id="m-784" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-785" dur="brevis" />
+								<barLine form="dashed" xml:id="m-d9f3ec7c-f027-41b0-bd9c-ff25979ddeba" />
+								<note xml:id="m-800" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-e2e2416d-9dbd-4d13-b980-731d96859e22" />
+								<rest xml:id="m-810" dur="brevis" />
+								<note xml:id="m-812" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-45675d1e-ae55-46cc-839a-9ed35c9454b3" />
+								<note xml:id="m-825" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-513fc6fa-e6f2-4f55-9a08-5f733760e5dd" />
+								<note xml:id="m-835" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-836" dur="brevis" />
+								<barLine form="dashed" xml:id="m-fe6ad8af-cbc1-40d7-b284-b4d21973580f" />
+								<note xml:id="m-850" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<rest xml:id="m-851" dur="brevis" />
+								<barLine form="dashed" xml:id="m-81bb06ec-e477-4708-b65b-fa6f69666534" />
+								<note xml:id="m-862" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-863" dur="brevis" />
+								<barLine form="dashed" xml:id="m-dc8ca2da-bd79-4d3e-ae3b-704e401b47d8" />
+								<note xml:id="m-879" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-1d663194-a569-4fe5-ac56-36493d9b9cb8" />
+								<note xml:id="m-891" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-892" dur="brevis" />
+								<barLine form="dashed" xml:id="m-17852a1d-13a1-45b8-b057-418797675212" />
+								<note xml:id="m-904" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<rest xml:id="m-905" dur="brevis" />
+								<barLine form="dashed" xml:id="m-41975bb1-4566-4423-8e17-3b776a87aa7a" />
+								<note xml:id="m-916" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-917" dur="brevis" />
+								<barLine form="dashed" xml:id="m-1a66755d-6d4c-4428-8213-f8a721242a1c" />
+								<note xml:id="m-931" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-5dced7c9-c6aa-4ea3-a66f-313b44435de4" />
+								<rest xml:id="m-943" dur="brevis" />
+								<note xml:id="m-944" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-1805ec54-016a-48e2-b165-0677d1d17e8d" />
+								<rest xml:id="m-956" dur="brevis" />
+								<note xml:id="m-957" dur="brevis" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-0c1f1c55-294b-4321-8752-d706e6bc9834" />
+								<rest xml:id="m-968" dur="brevis" />
+								<note xml:id="m-970" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-fb764717-1dd2-4528-94a5-63e5564ac673" />
+								<rest xml:id="m-983" dur="brevis" />
+								<note xml:id="m-984" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-e1ec14df-9c90-4382-b58b-fb4025cc65f5" />
+								<rest xml:id="m-997" dur="brevis" />
+								<note xml:id="m-999" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-90b33509-ac83-42f6-9bc9-fa0f15e73b49" />
+								<note xml:id="m-1011" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-f3558679-67f3-41bc-9ed6-1a26d51c5ef8" />
+								<note xml:id="m-1023" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-1024" dur="brevis" />
+								<barLine form="dashed" xml:id="m-74d73ab8-b7d9-471a-a4e7-392dbc13e731" />
+								<note xml:id="m-1037" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<rest xml:id="m-1038" dur="brevis" />
+								<barLine form="dashed" xml:id="m-3a9dd67f-1bbe-4865-af45-12a6ec9a53be" />
+								<note xml:id="m-1050" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-1051" dur="brevis" />
+								<barLine form="dashed" xml:id="m-9a6d6680-9502-4fb2-ae55-60a5855f4397" />
+								<note xml:id="m-1064" dur="brevis" oct="4" oct.ges="3" pname="f" />
+								<rest xml:id="m-1065" dur="brevis" />
+								<barLine form="dashed" xml:id="m-131b13fa-f708-47cc-ae4f-1331ee11f41f" />
+								<note xml:id="m-1078" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-1079" dur="brevis" />
+								<barLine form="dashed" xml:id="m-ff557d88-9886-4a89-a616-b72977387d5e" />
+								<note xml:id="m-1092" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-a8d91db1-ef51-4a35-b32e-4dd57512380d" />
+								<note xml:id="m-1104" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-1105" dur="semibrevis" oct="4" oct.ges="3" pname="e" dur.quality="major" num="1" numbase="2" />
+								<note xml:id="m-1106" dur="brevis" oct="4" oct.ges="3" pname="f" plica="desc" />
+								<barLine form="dashed" xml:id="m-2a579fdd-a888-4142-8bdb-a656f839aa91" />
+								<note xml:id="m-1120" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-1121" dur="brevis" oct="3" oct.ges="2" pname="b" />
+								<barLine form="dashed" xml:id="m-f9125472-1b00-4961-b918-90b37b5dafa2" />
+								<note xml:id="m-1133" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dbl" xml:id="m-2299a365-31ec-4b76-b5df-2985fd969bd0" />
+							</layer>
+						</staff>
+						<staff xml:id="m-43" n="2">
+							<layer xml:id="m-44" n="1">
+								<note xml:id="m-45" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-46" n="1">
+										<syl xml:id="m-47" wordpos="i">Ad</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-d53d40c4-dbf2-42ac-a0b2-a442fbdab9fc" />
+								<note xml:id="m-63" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-80" n="1">
+										<syl xml:id="m-81" con="d" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-64" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-82" n="1">
+										<syl xml:id="m-83" con="d" wordpos="m">mo</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-c4fa621c-fe55-427d-8821-2443561c08c6" />
+								<note xml:id="m-79" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-84" n="1">
+										<syl xml:id="m-85" wordpos="t">rem</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-883325ab-feeb-4ec5-88c5-822d9e614014" />
+								<note xml:id="m-97" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-118" n="1">
+										<syl xml:id="m-119" con="d" wordpos="i">se</syl>
+									</verse>
+								</note>
+								<note xml:id="m-98" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-120" n="1">
+										<syl xml:id="m-121" con="d" wordpos="m">qui</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-01bd8338-2839-4c24-ac10-b168cf537ae6" />
+								<note xml:id="m-116" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-122" n="1">
+										<syl xml:id="m-123" wordpos="t">tur</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-dabd11c5-e3b3-43f9-8739-1c8e5f4a3a5b" />
+								<note xml:id="m-133" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-135" n="1">
+										<syl xml:id="m-136" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-134" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-182" n="1">
+										<syl xml:id="m-183" con="d" wordpos="i">con</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-ec830af8-c182-4333-b0f4-8e50206934a2" />
+								<note xml:id="m-148" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-184" n="1">
+										<syl xml:id="m-185" con="d" wordpos="m">co</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-23b2a5ab-15a0-44db-bd78-81da0ddb5344" />
+								<note xml:id="m-163" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-186" n="1">
+										<syl xml:id="m-187" con="d" wordpos="m">mi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-164" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-188" n="1">
+										<syl xml:id="m-189" con="d" wordpos="m">ta</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-986fe7d8-99ac-4d96-a9a9-d7d7c37aa5a9" />
+								<note xml:id="m-181" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-190" n="1">
+										<syl xml:id="m-191" wordpos="t">tur</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-b0675004-c39c-4871-b238-1d8de26f13e8" />
+								<rest xml:id="m-202" dur="longa" EVENTUALDUR="2B" />
+								<barLine form="dashed" xml:id="m-fcf20b6f-b5e0-4cdc-bf8d-6bcbc5c9aaa4" />
+								<note xml:id="m-220" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-238" n="1">
+										<syl xml:id="m-239" con="d" wordpos="i">fi</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-e9e594a8-fbc8-406b-88e2-731ae51512dd" />
+								<note xml:id="m-235" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-240" n="1">
+										<syl xml:id="m-241" wordpos="t">des</syl>
+									</verse>
+								</note>
+								<note xml:id="m-236" dur="brevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-242" n="1">
+										<syl xml:id="m-243" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-f407b573-5a22-4bdf-a184-4e6aa0d9ee5a" />
+								<note xml:id="m-260" dur="brevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-296" n="1">
+										<syl xml:id="m-297" wordpos="i">con</syl>
+									</verse>
+								</note>
+								<note xml:id="m-261" dur="semibrevis" oct="4" oct.ges="3" pname="e" />
+								<note xml:id="m-263" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-264" dur="semibrevis" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-0af11564-2d0e-485f-9ac5-46baed654e7e" />
+								<note xml:id="m-276" dur="brevis" oct="4" oct.ges="3" pname="d" plica="desc">
+									<verse xml:id="m-298" n="1">
+										<syl xml:id="m-299" con="d" wordpos="m">stan</syl>
+									</verse>
+								</note>
+								<note xml:id="m-277" dur="brevis" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-300" n="1">
+										<syl xml:id="m-301" con="d" wordpos="m">ci</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-55cbc2a9-df64-471d-8c1e-1b7340005800" />
+								<note xml:id="m-295" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-302" n="1">
+										<syl xml:id="m-303" wordpos="t">a</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-cf75a600-735b-46b6-82e1-75c2d4d35987" />
+								<note xml:id="m-320" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-323" n="1">
+										<syl xml:id="m-324" wordpos="i">nam</syl>
+									</verse>
+								</note>
+								<note xml:id="m-321" dur="brevis" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-325" n="1">
+										<syl xml:id="m-326" wordpos="i">in</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-3fc67494-ab36-4b9a-9876-17e0a225874e" />
+								<note xml:id="m-340" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-345" n="1">
+										<syl xml:id="m-346" con="d" wordpos="i">hi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-342" dur="semibrevis" oct="4" oct.ges="3" pname="e" />
+								<note xml:id="m-343" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-344" dur="brevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-347" n="1">
+										<syl xml:id="m-348" wordpos="t">is</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-60eb7d00-4366-42ae-8082-cc10c86889be" />
+								<note xml:id="m-362" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-387" n="1">
+										<syl xml:id="m-388" con="d" wordpos="i">fun</syl>
+									</verse>
+								</note>
+								<note xml:id="m-363" dur="semibrevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-389" n="1">
+										<syl xml:id="m-390" con="d" wordpos="m">da</syl>
+									</verse>
+								</note>
+								<note xml:id="m-365" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-366" dur="semibrevis" oct="4" oct.ges="3" pname="e" />
+								<barLine form="dashed" xml:id="m-46ea71a6-8893-4155-b771-ff41978e256b" />
+								<note xml:id="m-386" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-391" n="1">
+										<syl xml:id="m-392" wordpos="t">tur</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-9ff8b8d0-ff65-4081-8952-afc4ff188714" />
+								<rest xml:id="m-405" dur="longa" EVENTUALDUR="2B" />
+								<barLine form="dashed" xml:id="m-5c03e890-c537-487b-9bd2-743e0b4ed404" />
+								<note xml:id="m-425" dur="semibrevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-430" n="1">
+										<syl xml:id="m-431" wordpos="i">hiis</syl>
+									</verse>
+								</note>
+								<note xml:id="m-427" dur="semibrevis" oct="4" oct.ges="3" pname="d" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-432" n="1">
+										<syl xml:id="m-433" con="d" wordpos="i">du</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-07fff65e-480c-46d0-b264-f68cfa2a95e0" />
+								<note xml:id="m-428" dur="semibrevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-434" n="1">
+										<syl xml:id="m-435" con="d" wordpos="m">o</syl>
+									</verse>
+								</note>
+								<note xml:id="m-429" dur="semibrevis" oct="4" oct.ges="3" pname="d" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-436" n="1">
+										<syl xml:id="m-437" wordpos="t">bus</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-e89069d2-517d-447d-b209-23152db0c6bc" />
+								<note xml:id="m-448" dur="brevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-477" n="1">
+										<syl xml:id="m-478" con="d" wordpos="i">i</syl>
+									</verse>
+								</note>
+								<note xml:id="m-449" dur="semibrevis" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-479" n="1">
+										<syl xml:id="m-480" con="d" wordpos="m">gi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-451" dur="semibrevis" oct="4" oct.ges="3" pname="f" />
+								<note xml:id="m-452" dur="semibrevis" oct="4" oct.ges="3" pname="e" />
+								<barLine form="dashed" xml:id="m-796a5065-96b9-48bb-aaf9-00a44cc8c6ad" />
+								<note xml:id="m-473" dur="brevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-481" n="1">
+										<syl xml:id="m-482" wordpos="t">tur</syl>
+									</verse>
+								</note>
+								<note xml:id="m-474" dur="semibrevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-483" n="1">
+										<syl xml:id="m-484" con="d" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-475" dur="semibrevis" oct="4" oct.ges="3" pname="f" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-485" n="1">
+										<syl xml:id="m-486" wordpos="t">mor</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-d574efef-c079-4a16-90bc-8b77bba648aa" />
+								<barLine form="dashed" xml:id="m-fb8fa232-ba90-4142-a29a-b27fd477cdcb" />
+								<note xml:id="m-498" dur="semibrevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-504" n="1">
+										<syl xml:id="m-505" wordpos="i">dum</syl>
+									</verse>
+								</note>
+								<note xml:id="m-499" dur="semibrevis" oct="4" oct.ges="3" pname="c" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-517" n="1">
+										<syl xml:id="m-518" con="d" wordpos="i">pri</syl>
+									</verse>
+								</note>
+								<note xml:id="m-500" dur="semibrevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-519" n="1">
+										<syl xml:id="m-520" con="d" wordpos="m">ua</syl>
+									</verse>
+								</note>
+								<note xml:id="m-502" dur="semibrevis" oct="4" oct.ges="3" pname="c" />
+								<note xml:id="m-503" dur="semibrevis" oct="3" oct.ges="2" pname="b" />
+								<barLine form="dashed" xml:id="m-480a88a3-70fe-4532-affa-b24858618af7" />
+								<note xml:id="m-516" dur="longa" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-521" n="1">
+										<syl xml:id="m-522" wordpos="t">tur</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-24094563-e227-4ac8-adf9-196fc6106263" />
+								<rest xml:id="m-540" dur="longa" EVENTUALDUR="2B" />
+								<barLine form="dashed" xml:id="m-e435d275-8f0b-4b46-9b3f-f813665cf425" />
+								<note xml:id="m-553" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-558" n="1">
+										<syl xml:id="m-559" con="d" wordpos="i">to</syl>
+									</verse>
+								</note>
+								<note xml:id="m-554" dur="semibrevis" oct="4" oct.ges="3" pname="e" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-560" n="1">
+										<syl xml:id="m-561" con="d" wordpos="m">tus</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-481cb1df-6ca1-4afa-8a14-3bf522d59bbb" />
+								<note xml:id="m-555" dur="semibrevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-562" n="1">
+										<syl xml:id="m-563" con="d" wordpos="m">pe</syl>
+									</verse>
+								</note>
+								<note xml:id="m-556" dur="semibrevis" oct="4" oct.ges="3" pname="f" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-564" n="1">
+										<syl xml:id="m-565" wordpos="t">rit</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-11b7c47c-ae5a-492e-bd10-58c71c5ccde8" />
+								<barLine form="dashed" xml:id="m-9b6d767a-3fa6-474d-8376-c7100f8782cc" />
+								<note xml:id="m-590" dur="semibrevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-593" n="1">
+										<syl xml:id="m-594" con="d" wordpos="i">pe</syl>
+									</verse>
+								</note>
+								<note xml:id="m-591" dur="semibrevis" oct="4" oct.ges="3" pname="f" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-595" n="1">
+										<syl xml:id="m-596" con="d" wordpos="m">ni</syl>
+									</verse>
+								</note>
+								<note xml:id="m-592" dur="brevis" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-597" n="1">
+										<syl xml:id="m-598" wordpos="t">tus</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-42a4332e-5fee-4e7c-a3d6-53dacfd34f8b" />
+								<note xml:id="m-617" dur="semibrevis" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-620" n="1">
+										<syl xml:id="m-621" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-618" dur="semibrevis" oct="4" oct.ges="3" pname="e" dur.quality="major" num="1" numbase="2">
+									<verse xml:id="m-666" n="1">
+										<syl xml:id="m-667" con="d" wordpos="i">ad</syl>
+									</verse>
+								</note>
+								<note xml:id="m-619" dur="brevis" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-668" n="1">
+										<syl xml:id="m-669" con="d" wordpos="m">ni</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-8b1fa50e-0096-4f81-b33c-95169a745a37" />
+								<note xml:id="m-640" dur="semibrevis" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-670" n="1">
+										<syl xml:id="m-671" con="d" wordpos="m">chi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-642" dur="semibrevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-643" dur="semibrevis" oct="4" oct.ges="3" pname="c" />
+								<note xml:id="m-645" dur="semibrevis" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-672" n="1">
+										<syl xml:id="m-673" con="d" wordpos="m">la</syl>
+									</verse>
+								</note>
+								<note xml:id="m-646" dur="semibrevis" oct="4" oct.ges="3" pname="e" dur.quality="major" num="1" numbase="2" />
+								<barLine form="dashed" xml:id="m-086d4249-6d79-49da-803e-3b07f2cba08f" />
+								<note xml:id="m-665" dur="longa" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-674" n="1">
+										<syl xml:id="m-675" wordpos="t">tur.</syl>
+									</verse>
+								</note>
+								<barLine form="dashed" xml:id="m-acdf3b2c-92aa-4026-ba39-01e1e460d932" />
+								<rest xml:id="m-688" dur="brevis" />
+								<note xml:id="m-691" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-a6ac8d3b-5def-4cc4-9105-6181d86cf211" />
+								<note xml:id="m-702" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-71147c94-19db-44c7-b2d9-5774807504d1" />
+								<note xml:id="m-715" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-716" dur="brevis" />
+								<barLine form="dashed" xml:id="m-f927235a-5e0f-4986-b7b0-b58bb62c5071" />
+								<note xml:id="m-727" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-12b38c99-5544-476b-8e31-598aa958db49" />
+								<rest xml:id="m-738" dur="brevis" />
+								<note xml:id="m-740" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-8064df04-2073-4860-8092-8907cf853340" />
+								<note xml:id="m-752" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-ac6b76a0-7458-404f-9d49-7c4b8b13ca19" />
+								<note xml:id="m-764" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-765" dur="brevis" />
+								<barLine form="dashed" xml:id="m-f22580fd-275f-4973-bbe6-7755d7dbbfdc" />
+								<note xml:id="m-777" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-d21fb07a-b659-4bd0-ae21-39b975b8b388" />
+								<rest xml:id="m-789" dur="brevis" />
+								<note xml:id="m-791" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-57479be5-9dfb-4e17-b19e-c1f18698087a" />
+								<note xml:id="m-803" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-9feada86-2a88-4dff-972d-35ba91433ed2" />
+								<note xml:id="m-815" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-816" dur="brevis" />
+								<barLine form="dashed" xml:id="m-9450fc90-6b55-452c-8feb-166a4c6e10b4" />
+								<note xml:id="m-828" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-091fcb54-c998-4b3d-a217-1e7992f8b1ca" />
+								<rest xml:id="m-839" dur="brevis" />
+								<note xml:id="m-840" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-a4d3fa08-7164-43d1-a933-3268388f9ab8" />
+								<rest xml:id="m-854" dur="brevis" />
+								<note xml:id="m-855" dur="brevis" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-d06020c8-a72d-4b15-98aa-ea8a7b592965" />
+								<rest xml:id="m-866" dur="brevis" />
+								<note xml:id="m-869" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-7c1c9f31-f5ff-43e2-b8bc-8c41024bfd8a" />
+								<note xml:id="m-882" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-a5974935-31aa-4e4c-9179-e061adac29cd" />
+								<rest xml:id="m-895" dur="brevis" />
+								<note xml:id="m-896" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-4d8e2aeb-7c50-477c-9662-0c74c6ff0085" />
+								<rest xml:id="m-908" dur="brevis" />
+								<note xml:id="m-909" dur="brevis" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-c58cc26c-0524-4662-bf2e-84bc478432b7" />
+								<rest xml:id="m-920" dur="brevis" />
+								<note xml:id="m-922" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-2d84aa96-0ae1-4b3d-bc1b-ece67f683bf5" />
+								<note xml:id="m-934" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-acca8bd2-676f-4a2b-bcca-2084aebdbafd" />
+								<note xml:id="m-947" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-948" dur="brevis" />
+								<barLine form="dashed" xml:id="m-2252e058-216f-45bb-ab9e-669d24577d82" />
+								<note xml:id="m-960" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<rest xml:id="m-961" dur="brevis" />
+								<barLine form="dashed" xml:id="m-2aba104a-1f9f-4798-a3bd-80fe68132698" />
+								<note xml:id="m-973" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-974" dur="brevis" />
+								<barLine form="dashed" xml:id="m-92471ca8-f57a-4573-b439-ed740ced2e78" />
+								<note xml:id="m-987" dur="brevis" oct="4" oct.ges="3" pname="f" />
+								<rest xml:id="m-988" dur="brevis" />
+								<barLine form="dashed" xml:id="m-bd6be340-06e7-4515-a395-04dc07dcfe88" />
+								<note xml:id="m-1002" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<rest xml:id="m-1003" dur="brevis" />
+								<barLine form="dashed" xml:id="m-8e1b408a-379d-49c7-b25d-cb3836dfb293" />
+								<note xml:id="m-1014" dur="longa" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-68440c7e-a85e-43bb-a6a3-160acdd77f69" />
+								<rest xml:id="m-1027" dur="brevis" />
+								<note xml:id="m-1029" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-23b3a6ea-d791-4a75-9ac1-14cd129777db" />
+								<rest xml:id="m-1041" dur="brevis" />
+								<note xml:id="m-1042" dur="brevis" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-d0dd3cd0-18a9-47c3-8843-1a408dc119f7" />
+								<rest xml:id="m-1054" dur="brevis" />
+								<note xml:id="m-1055" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-9bbd85e2-aab4-493a-8c29-c6fbe431d09d" />
+								<rest xml:id="m-1068" dur="brevis" />
+								<note xml:id="m-1069" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-b9283a68-f963-40c7-9b3e-f92bf0d154b9" />
+								<rest xml:id="m-1082" dur="brevis" />
+								<note xml:id="m-1084" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<barLine form="dashed" xml:id="m-facbd98f-2341-4928-9164-d8d56029b564" />
+								<note xml:id="m-1096" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dashed" xml:id="m-23b68a39-5eaa-4bac-9151-58d98ce2dfe8" />
+								<note xml:id="m-1110" dur="semibrevis" oct="4" oct.ges="3" pname="e" />
+								<note xml:id="m-1111" dur="semibrevis" oct="4" oct.ges="3" pname="d" dur.quality="major" num="1" numbase="2" />
+								<note xml:id="m-1112" dur="brevis" oct="4" oct.ges="3" pname="c" />
+								<barLine form="dashed" xml:id="m-c3d4db50-7747-49a2-ab83-0e445f525d9c" />
+								<note xml:id="m-1125" dur="brevis" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-1126" dur="brevis" oct="4" oct.ges="3" pname="e" />
+								<barLine form="dashed" xml:id="m-b9d45847-a3dc-46fd-9a6e-a0b150344f83" />
+								<note xml:id="m-1137" dur="longa" oct="4" oct.ges="3" pname="f" />
+								<barLine form="dbl" xml:id="m-6ffe7e67-10cf-43ca-88ea-03dee359ceb9" />
+							</layer>
+						</staff>
+						<staff xml:id="m-48" n="3">
+							<layer xml:id="m-49" n="1">
+								<note xml:id="m-51" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-a2dbcfca-055c-4a89-ab88-1eabe770c87b" />
+								<note xml:id="m-67" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-68" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-4d9aab40-aa51-449a-8eb8-f43fb9bd2544" />
+								<note xml:id="m-88" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-68394315-8d9a-49d5-936d-72b61b41f017" />
+								<note xml:id="m-102" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-103" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-872f9d74-1340-4d77-8e25-d1abfd6268b2" />
+								<note xml:id="m-126" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-133340ff-36ff-4f42-af2a-c12cb92b95cc" />
+								<note xml:id="m-140" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-141" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-9619ceb2-d03b-401c-b756-9257d2b4d041" />
+								<note xml:id="m-151" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-4357b902-0baa-41b8-a3dd-5c6058584cd6" />
+								<note xml:id="m-168" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-169" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-57f8540c-8eee-4505-88ba-9b43f58272c9" />
+								<note xml:id="m-194" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-f57328d5-d04d-4ce8-b838-6f252340f8d8" />
+								<note xml:id="m-206" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-207" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-5f3dabe3-f3c8-4a94-ac87-164a0f386bd4" />
+								<note xml:id="m-223" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-8d1512e5-faed-4417-b018-8aad32d88dd2" />
+								<note xml:id="m-247" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-248" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-34bc75a1-1648-4673-8caf-7acb5df6432f" />
+								<note xml:id="m-267" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-251f0e9f-2800-4830-8088-641d8a0d4a42" />
+								<note xml:id="m-281" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-282" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-a42efa66-8746-4e0a-8ba1-881bbeac6e72" />
+								<note xml:id="m-306" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-308" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-1df7d34a-3fa1-426a-bed8-665677d5c262" />
+								<note xml:id="m-329" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-330" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-a3f084c6-3e16-4710-b9fc-d85fa6c8c14b" />
+								<note xml:id="m-351" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-04c2c42b-6737-44cc-aa31-9b03fefe23d1" />
+								<note xml:id="m-370" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-371" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-b0eff2fe-10f6-495d-ad65-b349247e4c58" />
+								<note xml:id="m-395" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-397" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-1e7b916f-311c-48c0-92a0-add24ab128ed" />
+								<note xml:id="m-408" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-409" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-2585c430-82e1-46b3-b26f-c6db7c24cbbe" />
+								<note xml:id="m-440" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-ca85cd81-af0a-490c-9a7b-a0f266e77974" />
+								<note xml:id="m-456" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-457" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-e3c1670f-e117-4ff8-8d7c-d6b2eb955479" />
+								<note xml:id="m-489" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-491" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-c2349b7c-6bfb-43ee-8617-f6c89d5fffec" />
+								<note xml:id="m-508" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-509" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-70778d70-8503-4e4c-9adb-a0f3d73e5924" />
+								<note xml:id="m-525" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-527" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-9694558a-ea0f-45f5-839c-f4620b29fe59" />
+								<note xml:id="m-543" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-544" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-5bc4354a-d440-47d3-ba6d-6090bc304ea9" />
+								<note xml:id="m-568" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-ff2a7c1f-2d1c-45a1-8ab7-acef4da10e97" />
+								<note xml:id="m-602" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-603" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-69a6c8d3-f8cc-4077-a269-c30cc7780b38" />
+								<note xml:id="m-624" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-626" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-225996dd-f25d-412a-95c3-edf40c36ad03" />
+								<note xml:id="m-649" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-650" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-111adc28-5271-40cf-8af1-2ed86f8c3b67" />
+								<note xml:id="m-678" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-680" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-ed07d482-a629-4690-b9dc-73d60a00b953" />
+								<note xml:id="m-694" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-695" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-bad0cbfb-4fd9-4f4d-91c2-316ff6e3671b" />
+								<note xml:id="m-706" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-4f65432a-7a33-41c5-ac68-858951082a3c" />
+								<note xml:id="m-719" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-720" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-e3e556f1-d856-47ad-b300-f651ee9b26b0" />
+								<note xml:id="m-730" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-ab0a3c9c-6485-4196-80b2-893fe16ab43c" />
+								<note xml:id="m-744" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-745" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-04bf77f8-88d2-4ae2-bef7-6a5e882b9a32" />
+								<note xml:id="m-755" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-920fd4f4-a6ea-4d17-8b20-5b7dc0fd6971" />
+								<note xml:id="m-769" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-770" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-4b3061ae-30ee-41fc-83af-763ad1816108" />
+								<note xml:id="m-780" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-8903576c-8ef5-4284-aadb-4374fff8c20d" />
+								<note xml:id="m-795" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-796" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-985b80ae-1726-4427-9fc2-54acb2bc57d3" />
+								<note xml:id="m-806" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-acc61a40-2b3e-4cb4-b47f-4e61d42bf6b7" />
+								<note xml:id="m-820" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-821" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-751fc82a-4f16-4557-8460-ebb2355116b2" />
+								<note xml:id="m-831" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-351c3a47-60d8-429c-97a4-a9e5cccf2a09" />
+								<note xml:id="m-844" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-845" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-bac779ee-5c69-471a-ab42-1f42480d5ce2" />
+								<note xml:id="m-858" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-f78d5861-f682-4cc4-ab8e-9a7c6093d368" />
+								<note xml:id="m-873" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-874" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-dd02233e-6509-4fc0-93f3-a9255af24d07" />
+								<note xml:id="m-885" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-887" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-8ca99690-00fd-404c-9e39-2340ac6f989a" />
+								<note xml:id="m-899" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-900" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-d91b36a7-c42c-4004-a336-2bf622081c51" />
+								<note xml:id="m-912" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-dbddceb1-293f-43ac-a785-61ffd3b5f94c" />
+								<note xml:id="m-926" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-927" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-9379242e-a7a9-4c7e-ac97-db9897f10b2d" />
+								<note xml:id="m-937" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-939" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-e5610eed-7b6a-49d9-b4ae-934eb55a22f0" />
+								<note xml:id="m-951" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-952" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-8edd6816-8e23-4451-89bd-8ebde3930458" />
+								<note xml:id="m-964" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-1bcbabb1-d63a-4d9c-84c6-85b35be59fb8" />
+								<note xml:id="m-978" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-979" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-b644c5a5-273e-4cac-bcd4-705e1b110235" />
+								<note xml:id="m-991" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-993" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-165112d4-0848-48e5-8f30-c0facf18fe0a" />
+								<note xml:id="m-1006" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-1007" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-f98b04d9-59a5-432b-9318-bc10110d6aae" />
+								<note xml:id="m-1017" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-1019" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-7356873d-48a0-4e9f-94f3-1dd43d6cd2ac" />
+								<note xml:id="m-1032" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-1033" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-b196445a-f9ea-49c9-8413-219f89eab59f" />
+								<note xml:id="m-1045" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-6a1ff71f-3fea-4919-9953-0014ff1fbcb2" />
+								<note xml:id="m-1059" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-1060" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-67aba412-629c-40fa-89b1-2709a480042c" />
+								<note xml:id="m-1072" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<note xml:id="m-1074" dur="brevis" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-bec45d30-8e34-45e3-b748-e1b2d50e2cc8" />
+								<note xml:id="m-1087" dur="brevis" oct="3" oct.ges="2" pname="e" />
+								<note xml:id="m-1088" dur="brevis" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-d416cc53-5632-4f35-854a-2d2fc087b10b" />
+								<note xml:id="m-1099" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-b394eca6-85a7-465f-9edc-c53c66d0be9e" />
+								<note xml:id="m-1115" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dashed" xml:id="m-5d26af8b-2f5a-4ef5-82f3-412743998aac" />
+								<note xml:id="m-1129" dur="longa" oct="3" oct.ges="2" pname="g" />
+								<barLine form="dashed" xml:id="m-f2441cee-8f7e-41a7-86da-74e24880863a" />
+								<note xml:id="m-1141" dur="longa" oct="3" oct.ges="2" pname="f" />
+								<barLine form="dbl" xml:id="m-188912d2-cbe3-49d8-8f28-c6a92f764e6c" />
+							</layer>
+						</staff>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
