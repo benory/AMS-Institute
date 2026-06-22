@@ -1,26 +1,60 @@
 //////////////////////////////
 //
-// doGet -- this is the function that returns a GET request for the web app URL.
+// Google Apps Script for exporting Google Sheet metadata as JSON.
+//
+// This script is deployed as a Google Apps Script web app. When someone visits
+// the web app URL, it reads a tab from a Google Sheet, converts the spreadsheet
+// rows into JSON, and returns that JSON to the browser or website.
+//
+// Useful URL options:
+//
+// - ?sheet=works chooses the "works" tab.
+// - ?sheet=composers chooses the "composers" tab.
+// - ?format=tsv returns the raw spreadsheet export for debugging.
+//
+// Beginner vocabulary:
+//
+// - sid: the spreadsheet ID from the Google Sheets URL.
+// - gid: the ID number for one tab inside the spreadsheet.
+// - TSV: tab-separated values, a plain-text table format.
+// - JSON: structured data that JavaScript websites can read.
+//
+
+
+//////////////////////////////
+//
+// doGet -- runs when someone visits the deployed web app URL.
+//
+// In Google Apps Script, doGet is a special function name. Google calls it
+// automatically for a normal web request. The event parameter contains any
+// URL options, such as ?sheet=works or ?format=tsv.
 //
 
 function doGet(event) {
+  // Spreadsheet ID for the metadata Google Sheet.
   let sid = "14Ymp2LXcTXz_EKzYc6OrG9sLCuawSPhq6yZUApd0lO4";
 
+  // Default sheet-tab ID. Here, "0" means the first/default tab.
   let gid = "0";
 
+  // Friendly sheet names mapped to their Google Sheets gid numbers.
   let gid_data = {
       works: "0",
       composers: "1979029450"
   };
 
+  // Optional URL parameter: ?sheet=works or ?sheet=composers.
   if (event && event.parameter && event.parameter.sheet) {
     let s = event.parameter.sheet;
     gid = gid_data[s];
+
+    // If the requested sheet name is not known, use the default tab.
     if (!gid) {
       gid = "0";
     }
   }
 
+  // JSON is the normal website format. TSV is mainly for debugging.
   let format = "json";
   if (event && event.parameter && event.parameter.format) {
     let f = event.parameter.format;
@@ -29,13 +63,19 @@ function doGet(event) {
     }
   }
 
+  // Ask Google Sheets to export the selected tab as TSV.
   let url = "https://docs.google.com/spreadsheets/d/"+sid+"/export?gid="+gid+"&format=tsv";
   const value = UrlFetchApp.fetch(url);
+
+  // If requested, return the plain TSV instead of converting it to JSON.
   if (format === "tsv") {
     return ContentService.createTextOutput(value).setMimeType(ContentService.MimeType.TEXT);
   }
+
+  // Convert the TSV text into an array of JavaScript objects, then stringify it.
   let obj = spreadsheetToObject(value.getContentText(), -1, "ID", true);
-  let json = JSON.stringify(obj, null, "\t");  
+  let json = JSON.stringify(obj, null, "\t");
+
   return ContentService.createTextOutput(json)
           .setMimeType(ContentService.MimeType.JSON);
 }
@@ -44,20 +84,27 @@ function doGet(event) {
 
 //////////////////////////////
 //
-// getHeaderIndex -- Given a target column header text, return the first
-//     line that has that text in a TSV line.
+// getHeaderIndex -- find which row contains a particular column header.
+//
+// This is useful when the spreadsheet has title rows or notes above the real
+// header row. For this project, we search for the row containing "ID".
 //
 
 function getHeaderIndex(lines, targetField) {
   for (let i=0; i<lines.length; i++) {
+     // Split one TSV row into cells.
      let data = lines[i].split(/\t/);
+
      for (let j=0; j<data.length; j++) {
        let value = data[j].trim();
+
        if (value === targetField) {
            return i;
        }
      }
   }
+
+  // If the header is not found, fall back to the first row.
   return 0;
 }
 
@@ -65,20 +112,39 @@ function getHeaderIndex(lines, targetField) {
 
 //////////////////////////////
 //
-// spreadsheetToObject -- Convert TSV form of spreadsheet into Javascript object.
+// spreadsheetToObject -- convert TSV spreadsheet text into JavaScript objects.
+//
+// Each spreadsheet row becomes one object. Each column header becomes a field
+// name. For example, a row with columns "ID", "Composer", and "Title" becomes:
+//
+// {
+//   "ID": "Ren1001a",
+//   "Composer": "Renaldo",
+//   "Title": "Missa Sine nomine"
+// }
+//
+// The function returns an array, or list, of these row objects.
 //
 
 function spreadsheetToObject(text, headerIndex, headerField, suppressEmpty) {
    if (!headerIndex) {
       headerIndex = 0;
-   } 
+   }
+
+   // Convert suppressEmpty into a true/false value.
    suppressEmpty = !!suppressEmpty;
- 
+
+   // Split the TSV text into rows.
    let lines = text.match(/[^\r\n]+/g);
+
+   // If requested, find the header row by looking for a field such as "ID".
    if (headerField) {
       headerIndex = getHeaderIndex(lines, headerField);
    }
+
+  // mapping connects column numbers to column-header names.
   let mapping = {};
+
    let data = lines[headerIndex].split(/\t/);
    for (let i=0; i<data.length; i++) {
        if (data[i].match(/^\s*$/)) {
@@ -86,23 +152,33 @@ function spreadsheetToObject(text, headerIndex, headerField, suppressEmpty) {
        }
       mapping[i] = data[i].trim();
    }
+
    var output = [];
    for (let i=headerIndex+1; i<lines.length; i++) {
      if (lines[i].match(/^\s*$/)) {
         continue;
-     }    
+     }
+
       data = lines[i].split(/\t/);
       var item = {};
+
       for (let j=0; j<data.length; j++) {
+        // Skip blank cells if suppressEmpty is true.
         if (suppressEmpty && data[j].match(/^\s*$/)) {
           continue;
         }
+
+        // Skip columns that do not have a header.
         if (!mapping[j] || mapping[j].match(/^\s*$/)) {
           continue;
         }
+
+         // Use the column header as the field name for this cell.
          item[mapping[j]] = data[j].trim();
       }
+
       output.push(item);
    }
+
    return output;
 }
